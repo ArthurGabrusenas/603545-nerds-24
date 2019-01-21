@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Artur Gabrusenas](https://up.htmlacademy.ru/htmlcss/24/user/603545).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Поликашина] (https://htmlacademy.ru/profile/id890283)
 
 ---
 
