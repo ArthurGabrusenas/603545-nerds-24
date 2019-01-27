@@ -5,8 +5,63 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="header-navigation">
+        <a>
+          <img src="img/main-logo.png" alt="Web-студия Нёрдс">
+        </a>
+        <ul class="header-navigation-menu">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="basket">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>  
+    <main>
+      <h1 class="hidden-item">Web-студия Нёрдс</h1>
+      <section class="services">
+        <h2 class="hidden-item">Услуги</h2>
+          <ul class="services-list">
+            <li>
+              <h3>Веб-Сайты</h3>
+              <img src="img/services-list-site.jpg" alt="Веб-сайты"> <!--логичнее мне кажется расположить img над h3. Так будет проще стили делать-->
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
+              <a href="toOrder.html">Заказать</a>
+            </li>
+            <li>
+              <h3>Приложения</h3>
+              <img src="img/services-list-app.jpg" alt="Приложения">
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a href="toOrder.html">Заказать</a>
+            </li>
+            <li>
+              <h3>Презентации</h3>
+              <img src="img/services-list-presentation.jpg" alt="Презентации">
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a href="toOrder.html">Заказать</a>
+            </li>
+          </ul>
+      </section>
+    </main>
+    <footer>  
+      <section class="social">
+        <ul class="social-list">
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </section>
+      <section class="offer">
+        <p>
+          <span>Давайте дружить, это выгодно!</span>
+          <br>
+          <span>Скидка 10% для друзей из социальных сетей.</span>
+        </p>
+      </section>
+    </footer>
   </body>
 </html>
