@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="header-navigation">
-        <a>
+        <a href="index.html">
           <img src="img/main-logo.png" alt="Web-студия Нёрдс">
         </a>
         <ul class="header-navigation-menu">
@@ -24,6 +24,7 @@
     <main> 
       <h1>Магазин готовых шаблонов</h1>        
       <section class="filter">
+        <h2 class="hidden-item">Фильтры</h2>
         <form action="#">
             <p class="filter-grid">
                 <span class="filter-headline">Сетка:</span>
@@ -50,37 +51,84 @@
       </section>
       <section class="catalog">
           <h2 class="hidden-item">Каталог готовых шаблонов</h2>
-          <table>
-            <tr>
-                <td><img src="img/catalog-item-1.jpg" alt="item_1"></td>
-                <td><img src="img/catalog-item-2.jpg" alt="item_2"></td>
-            </tr>    
-            <tr>
-                <td><img src="img/catalog-item-3.jpg" alt="item_3"></td>
-                <td><img src="img/catalog-item-4.jpg" alt="item_4"></td>
-            </tr>  
-            <tr>
-                <td><img src="img/catalog-item-5.jpg" alt="item_5"></td>
-                <td><img src="img/catalog-item-6.jpg" alt="item_6"></td>
-                </tr>  
-          </table>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <div class="catalog-decorativeControlPanel">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <a href="#">
+                  <img src="img/catalog-sedona.jpg" alt="Проект Sedona">
+              </a>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-decorativeControlPanel">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <a href="#">
+                  <img src="img/catalog-pink.jpg" alt="Проект Pink">
+                </a>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-decorativeControlPanel">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <a href="#">
+                  <img src="img/catalog-barberShop.jpg" alt="Проект Barbershop">
+              </a>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-decorativeControlPanel">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <a href="#">
+                  <img src="img/catalog-mishka.jpg" alt="Проект Mishka">
+              </a>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-decorativeControlPanel">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <a href="#">
+                  <img src="img/catalog-aPlus.jpg" alt="A plus">
+              </a>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-decorativeControlPanel">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <a href="#">
+                  <img src="img/catalog-kvass.jpg" alt="Кваст">
+              </a>
+            </li>
+          </ul>
       </section>
     </main>
     <footer>  
-      <section class="social">
         <ul class="social-list">
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a class="social-item vk" href="#">Вконтакте</a></li>
+          <li><a class="social-item facebook" href="#">Facebook</a></li>
+          <li><a class="social-item instagram" href="#">Instagram</a></li>
         </ul>
-      </section>
-      <section class="offer">
+      <div class="tagline">
         <p>
-          <span>Давайте дружить, это выгодно!</span>
-          <br>
-          <span>Скидка 10% для друзей из социальных сетей.</span>
+          <b> Давайте дружить, это выгодно!</b>
+        </p> 
+        <p>
+          Скидка 10% для друзей из социальных сетей.
         </p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
