@@ -5,8 +5,58 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="header-navigation">
+        <a>
+          <img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс">
+        </a>
+        <ul class="header-navigation-menu">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="basket">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>  
+    <main>
+      <h1 class="hidden-item">Web-студия Нёрдс</h1>
+      <section class="services">
+        <h2 class="hidden-item">Услуги</h2>
+          <ul class="services-list">
+            <li>
+              <h3>Веб-Сайты</h3>
+              <img src="img/services-list-site.jpg" alt="Веб-сайты"> 
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
+              <a class="services-list-button services-site-button" href="toOrder.html">Заказать</a>
+            </li>
+            <li>
+              <h3>Приложения</h3>
+              <img src="img/services-list-app.jpg" alt="Приложения">
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="services-list-button services-app-button" href="toOrder.html">Заказать</a>
+            </li>
+            <li>
+              <h3>Презентации</h3>
+              <img src="img/services-list-presentation.jpg" alt="Презентации">
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="services-list-button services-presentation-button" href="toOrder.html">Заказать</a>
+            </li>
+          </ul>
+      </section>
+    </main>
+    <footer>  
+        <ul class="social-list">
+          <li><a class="social-item vk" href="#">Вконтакте</a></li>
+          <li><a class="social-item facebook" href="#">Facebook</a></li>
+          <li><a class="social-item instagram" href="#">Instagram</a></li>
+        </ul>
+        <div class="tagline">
+          <p><b> Давайте дружить, это выгодно!</b></p> 
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </footer>
   </body>
 </html>
