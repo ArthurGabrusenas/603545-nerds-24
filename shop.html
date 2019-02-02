@@ -70,6 +70,11 @@
               <a href="#">
                   <img src="img/catalog-sedona.jpg" alt="Проект Sedona">
               </a>
+              <div class="catalog-item-buy">
+                <p>Sedona</p>
+                <p>Информационный сайт для туристов</p>
+                <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+              </div>
             </li>
             <li class="catalog-item">
               <div class="catalog-decorative-control-panel">
@@ -78,8 +83,13 @@
                 <span></span>
               </div>
               <a href="#">
-                  <img src="img/catalog-pink.jpg" alt="Проект Pink">
-                </a>
+                <img src="img/catalog-pink.jpg" alt="Проект Pink">
+              </a>
+              <div class="catalog-item-buy">
+                  <p>Pink app</p>
+                  <p>Продуктовый лендинг приложения для ios и android</p>
+                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+                </div>
             </li>
             <li class="catalog-item">
               <div class="catalog-decorative-control-panel">
@@ -90,6 +100,11 @@
               <a href="#">
                   <img src="img/catalog-barber-shop.jpg" alt="Проект Barbershop">
               </a>
+              <div class="catalog-item-buy">
+                  <p>Barbershop</p>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+                </div>
             </li>
             <li class="catalog-item">
               <div class="catalog-decorative-control-panel">
@@ -100,6 +115,11 @@
               <a href="#">
                   <img src="img/catalog-mishka.jpg" alt="Проект Mishka">
               </a>
+              <div class="catalog-item-buy">
+                  <p>Mishka</p>
+                  <p>Интернет-магазин вязаных игрушек</p>
+                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+              </div>
             </li>
             <li class="catalog-item">
               <div class="catalog-decorative-control-panel">
@@ -110,6 +130,11 @@
               <a href="#">
                   <img src="img/catalog-a-plus.jpg" alt="A plus">
               </a>
+              <div class="catalog-item-buy">
+                  <p>A plus</p>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+              </div>
             </li>
             <li class="catalog-item">
               <div class="catalog-decorative-control-panel">
@@ -120,6 +145,11 @@
               <a href="#">
                   <img src="img/catalog-kvass.jpg" alt="Кваст">
               </a>
+              <div class="catalog-item-buy">
+                  <p>Кваст</p>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+              </div>
             </li>
           </ul>
           <ul class="catalog-list-nav">
@@ -157,5 +187,26 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <section class="pop-up">
+        <h2>Напишите нам</h2>
+        <button class="pop-up-close-button" aria-label="Закрыть pop up">&#215;</button>
+        <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
+          <legend class="pop-up-form">
+            <fieldset class="form-name-user">
+              <p><label for="name-user-input">Ваше имя:</label></p>
+              <p><input id="name-user-input" type="text" placeholder="Имя Фамилия" required></p>
+            </fieldset> 
+            <fieldset class="form-email-user">
+              <p><label for="email-user-input">Ваш e-mail:</label></p>
+              <p><input id="email-user-input" type="text" placeholder="email@example.com" required></p>
+            </fieldset>
+            <fieldset class="form-text-area">
+              <p><label for="text-area-user">Текст письма:</label></p>
+              <textarea class="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+            </fieldset>   
+          </legend>
+          <button class="pop-up-send-form" aria-label="Отправка формы" aria-label="Отправка формы">Отправить</button>
+        </form>
+      </section>
   </body>
 </html>
