@@ -25,16 +25,26 @@
       <h1>Магазин готовых шаблонов</h1>        
       <section class="filter">
         <h2 class="hidden-item">Фильтры</h2>
-        <form action="#">
+        <form action="http://echo.htmlacademy.ru" class="filter-form">
+          <legend>
+            <fieldset class="filter-form-item">
             <p>Стоимость</p> 
+            <p>от</p>
+            <input type="number" aria-label="Стоимость от">
+            <p>до</p>
+            <input type="number" aria-label="Стоимость до">
+          </fieldset>
+          <fieldset class="filter-form-item">
             <p class="filter-grid">
                 <span class="filter-headline">Сетка:</span>
                 <ul>
-                    <li><input type="checkbox">Адаптивная</li>
-                    <li><input type="checkbox">Фиксированная</li>
-                    <li><input type="checkbox">Резиновая</li>
+                    <li><input type="radio" name="site-adaptive">Адаптивная</li>
+                    <li><input type="radio" name="site-adaptive">Фиксированная</li>
+                    <li><input type="radio" name="site-adaptive">Резиновая</li>
                 </ul>
-            </p>    
+            </p> 
+          </fieldset>
+          <fieldset class="filter-form-item">
             <p class="filter-features">
                 <span class="filter-headline">Особенности</span>
                 <ul>
@@ -45,9 +55,11 @@
                     <li><input type="checkbox">Корзина</li>
                 </ul>
             </p>
+          </fieldset>   
             <p>
-                <button>Показать</button>
+              <button class="filter-form-button" aria-label="Кнопка фильтров">Показать</button>
             </p>
+          </legend>  
         </form>         
       </section>
       <section class="catalog">
@@ -198,14 +210,14 @@
             </fieldset> 
             <fieldset class="form-email-user">
               <p><label for="email-user-input">Ваш e-mail:</label></p>
-              <p><input id="email-user-input" type="text" placeholder="email@example.com" required></p>
+              <p><input id="email-user-input" type="email" placeholder="email@example.com" required></p>
             </fieldset>
             <fieldset class="form-text-area">
               <p><label for="text-area-user">Текст письма:</label></p>
               <textarea class="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
             </fieldset>   
           </legend>
-          <button class="pop-up-send-form" aria-label="Отправка формы" aria-label="Отправка формы">Отправить</button>
+          <button class="pop-up-send-form" aria-label="Отправка формы" type="submit">Отправить</button>
         </form>
       </section>
   </body>
