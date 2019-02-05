@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="header-navigation">
         <a href="index.html">
-          <img src="img/main-logo.png" alt="Web-студия Нёрдс">
+          <img src="img/main-logo.png" alt="Web-студия Нёрдс" width="" height="">
         </a>
         <ul class="header-navigation-menu">
           <li><a href="#">Студия</a></li>
@@ -25,41 +25,59 @@
       <h1>Магазин готовых шаблонов</h1>        
       <section class="filter">
         <h2 class="hidden-item">Фильтры</h2>
-        <form action="http://echo.htmlacademy.ru" class="filter-form">
-          <legend>
-            <fieldset class="filter-form-item">
-            <p>Стоимость</p> 
-            <p>от</p>
-            <input type="number" aria-label="Стоимость от">
-            <p>до</p>
-            <input type="number" aria-label="Стоимость до">
-          </fieldset>
+        <form action="http://echo.htmlacademy.ru" class="filter-form" method="get">                                         
           <fieldset class="filter-form-item">
+            <legend class="filter-headline">Стоимость</legend>  
+            <p>от</p>
+            <input type="text" aria-label="Стоимость от">
+            <p>до</p>
+            <input type="text" aria-label="Стоимость до">
+          </fieldset>
+          <fieldset class="filter-form-item"> 
+            <legend class="filter-headline">Сетка:</legend>                           
             <p class="filter-grid">
-                <span class="filter-headline">Сетка:</span>
-                <ul>
-                    <li><input type="radio" name="site-adaptive">Адаптивная</li>
-                    <li><input type="radio" name="site-adaptive">Фиксированная</li>
-                    <li><input type="radio" name="site-adaptive">Резиновая</li>
-                </ul>
+              <ul>
+                <li><input type="radio" name="site-adaptive" id="site-adaptive">
+                  <label for="site-adaptive">Адаптивная</label>
+                </li>
+                <li><input type="radio" name="site-adaptive" id="site-fixed">
+                  <label for="site-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="site-adaptive" id="site-stretch">
+                  <label for="site-adaptive-stretch">Резиновая</label>
+                </li>
+              </ul>
             </p> 
           </fieldset>
           <fieldset class="filter-form-item">
+            <legend class="filter-headline">Особенности</legend>
             <p class="filter-features">
-                <span class="filter-headline">Особенности</span>
                 <ul>
-                    <li><input type="checkbox">Слайдер</li>
-                    <li><input type="checkbox">Блок преимуществ</li>
-                    <li><input type="checkbox">Новости</li>
-                    <li><input type="checkbox">Галерея</li>
-                    <li><input type="checkbox">Корзина</li>
+                    <li>
+                      <input type="checkbox" id="filter-features-slider">
+                      <label for="">Слайдер</label>
+                    </li>                             
+                    <li>
+                      <input type="checkbox" id="filter-features-advantage">
+                      <label for="filter-features-advantage">Блок преимуществ</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter-features-news">
+                      <label for="filter-features-news">Новости</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter-features-gallery">
+                      <label for="filter-features-gallery">Галерея</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter-features-basket">
+                      <label for="filter-features-basket">Корзина</label>
+                    </li>
                 </ul>
             </p>
           </fieldset>   
-            <p>
-              <button class="filter-form-button" aria-label="Кнопка фильтров">Показать</button>
-            </p>
-          </legend>  
+          <button class="filter-form-button" aria-label="Отправка формы">Показать</button>    
         </form>         
       </section>
       <section class="catalog">
@@ -80,13 +98,15 @@
                 <span></span>
               </div>
               <a href="#">
-                  <img src="img/catalog-sedona.jpg" alt="Проект Sedona">
+                  <img src="img/catalog-sedona.jpg" alt="Проект Sedona" width="" height="">
               </a>
               <div class="catalog-item-buy">
-                <p>Sedona</p>
+                <h3>Sedona</h3>                                                                               
                 <p>Информационный сайт для туристов</p>
-                <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
-              </div>
+                <a href="#" class="catalog-item-buy-button">
+                  <span class="hidden-item">кнопка покупки</span> 9 900 руб.
+                </a>      
+              </div>                                                                                            
             </li>
             <li class="catalog-item">
               <div class="catalog-decorative-control-panel">
@@ -95,12 +115,14 @@
                 <span></span>
               </div>
               <a href="#">
-                <img src="img/catalog-pink.jpg" alt="Проект Pink">
+                <img src="img/catalog-pink.jpg" alt="Проект Pink" width="" height="">
               </a>
               <div class="catalog-item-buy">
-                  <p>Pink app</p>
+                  <h3>Pink app</h3>                                                                 
                   <p>Продуктовый лендинг приложения для ios и android</p>
-                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+                  <a href="#" class="catalog-item-buy-button">
+                    <span class="hidden-item">кнопка покупки</span> 9 900 руб.
+                  </a>
                 </div>
             </li>
             <li class="catalog-item">
@@ -110,12 +132,14 @@
                 <span></span>
               </div>
               <a href="#">
-                  <img src="img/catalog-barber-shop.jpg" alt="Проект Barbershop">
+                  <img src="img/catalog-barber-shop.jpg" alt="Проект Barbershop" width="" height="">
               </a>
               <div class="catalog-item-buy">
-                  <p>Barbershop</p>
+                  <h3>Barbershop</h3>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
-                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+                  <a href="#" class="catalog-item-buy-button">
+                    <span class="hidden-item">кнопка покупки</span> 9 900 руб.
+                  </a>
                 </div>
             </li>
             <li class="catalog-item">
@@ -125,12 +149,14 @@
                 <span></span>
               </div>
               <a href="#">
-                  <img src="img/catalog-mishka.jpg" alt="Проект Mishka">
+                  <img src="img/catalog-mishka.jpg" alt="Проект Mishka" width="" height="">
               </a>
               <div class="catalog-item-buy">
-                  <p>Mishka</p>
+                  <h3>Mishka</h3>
                   <p>Интернет-магазин вязаных игрушек</p>
-                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+                  <a href="#" class="catalog-item-buy-button">
+                      <span class="hidden-item">кнопка покупки</span> 9 900 руб.
+                  </a>
               </div>
             </li>
             <li class="catalog-item">
@@ -140,12 +166,14 @@
                 <span></span>
               </div>
               <a href="#">
-                  <img src="img/catalog-a-plus.jpg" alt="A plus">
+                  <img src="img/catalog-a-plus.jpg" alt="A plus" width="" height="">
               </a>
               <div class="catalog-item-buy">
-                  <p>A plus</p>
+                  <h3>A plus</h3>
                   <p>Лендинг курсов повышения квалификации</p>
-                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+                  <a href="#" class="catalog-item-buy-button">
+                      <span class="hidden-item">кнопка покупки</span> 9 900 руб.
+                  </a>
               </div>
             </li>
             <li class="catalog-item">
@@ -155,12 +183,14 @@
                 <span></span>
               </div>
               <a href="#">
-                  <img src="img/catalog-kvass.jpg" alt="Кваст">
+                  <img src="img/catalog-kvass.jpg" alt="Кваст" width="" height="">
               </a>
               <div class="catalog-item-buy">
-                  <p>Кваст</p>
+                  <h3>Кваст</h3>
                   <p>Промо-сайт производителя крафтового кваса</p>
-                  <button class="catalog-item-buy-button" aria-label="кнопка покупки">9 900 руб.</button>
+                  <a href="#" class="catalog-item-buy-button">
+                      <span class="hidden-item">кнопка покупки</span> 9 900 руб.
+                  </a>
               </div>
             </li>
           </ul>
@@ -199,26 +229,24 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <section class="pop-up">
-        <h2>Напишите нам</h2>
+    <section class="pop-up">                                                                  
+      <h2>Напишите нам</h2>
+      <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
+        <p class="pop-up-form-item">
+          <label for="name-user-input">Ваше имя:</label>
+          <input id="name-user-input" type="text" placeholder="Имя Фамилия" required>
+        </p>        
+        <p class="pop-up-form-item">
+          <label for="email-user-input">Ваш e-mail:</label>
+          <input id="email-user-input" type="email" placeholder="email@example.com" required>
+        </p>        
+        <p class="pop-up-form-item">
+          <label for="text-area-user">Текст письма:</label>
+          <textarea id="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+        </p>        
+        <button class="pop-up-send-form" type="submit">Отправить</button>
         <button class="pop-up-close-button" aria-label="Закрыть pop up">&#215;</button>
-        <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
-          <legend class="pop-up-form">
-            <fieldset class="form-name-user">
-              <p><label for="name-user-input">Ваше имя:</label></p>
-              <p><input id="name-user-input" type="text" placeholder="Имя Фамилия" required></p>
-            </fieldset> 
-            <fieldset class="form-email-user">
-              <p><label for="email-user-input">Ваш e-mail:</label></p>
-              <p><input id="email-user-input" type="email" placeholder="email@example.com" required></p>
-            </fieldset>
-            <fieldset class="form-text-area">
-              <p><label for="text-area-user">Текст письма:</label></p>
-              <textarea class="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
-            </fieldset>   
-          </legend>
-          <button class="pop-up-send-form" aria-label="Отправка формы" type="submit">Отправить</button>
-        </form>
-      </section>
+      </form>
+    </section>
   </body>
 </html>
