@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                                                                                                                   
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="header-navigation">
         <a>
-          <img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс"> 
+          <img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65"> 
         </a>
         <ul class="header-navigation-menu">
           <li><a href="#">Студия</a></li>
@@ -48,19 +48,19 @@
           <ul class="services-list">
             <li>
               <h3>Веб-Сайты</h3>
-              <img src="img/services-list-site.png" alt="Веб-сайты">               
+              <img src="img/services-list-site.png" alt="Веб-сайты" width="300" height="146">               
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
               <a class="services-list-button services-site-button" href="toOrder.html">Заказать</a>
             </li>
             <li>
               <h3>Приложения</h3>
-              <img src="img/services-list-app.png" alt="Приложения">     
+              <img src="img/services-list-app.png" alt="Приложения" width="300" height="146">     
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
               <a class="services-list-button services-app-button" href="toOrder.html">Заказать</a>
             </li>
             <li>
               <h3>Презентации</h3>
-              <img src="img/services-list-presentation.png" alt="Презентации">
+              <img src="img/services-list-presentation.png" alt="Презентации" width="300" height="146">
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
               <a class="services-list-button services-presentation-button" href="toOrder.html">Заказать</a>
             </li>
@@ -79,7 +79,7 @@
           </ul>
         </div>
         <div class="about-us-statistics">
-          <img src="img/about-us-statistics-logo.png" alt="Web-студия Нёрдс">
+          <img src="img/about-us-statistics-logo.png" alt="Web-студия Нёрдс" width="360" height="208">
           <p>с 2004 года Любим точность во всем:</p>
           <table>
             <tr>
@@ -99,23 +99,23 @@
         <h2 class="hidden-item">Наши партнеры</h2>
         <ul class="partners-list">
           <li>
-            <a href="#"><img src="img/partners-html-academy.png" alt="Html Academy"></a>
+            <a href="#"><img src="img/partners-html-academy.png" alt="Html Academy" width="199" height="68"></a>
           </li>
           <li>
-              <a href="#"><img src="img/partners-borodinski.png" alt="Барбершоп Borodinski"></a> 
+              <a href="#"><img src="img/partners-borodinski.png" alt="Барбершоп Borodinski" width="209" height="87"></a> 
           </li>
           <li>
-              <a href="#"><img src="img/partners-pink.png" alt="Pink"></a> 
+              <a href="#"><img src="img/partners-pink.png" alt="Pink" width="185" height="52"></a> 
           </li>
           <li>
-              <a href="#"><img src="img/partners-mishka.png" alt="Mishka"></a> 
+              <a href="#"><img src="img/partners-mishka.png" alt="Mishka" width="173" height="84"></a> 
           </li>
         </ul>
       </section>
     </main>
     <footer>
       <nav class="footer-navigation">
-        <img src="img/footer-navigation-map.jpg" width="400" height="200" alt="Местоположение на карте">
+        <img src="img/footer-navigation-map.jpg" width="1440" height="416" alt="Местоположение на карте">
         <address>
           <p>Nёrds design studio</p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p> 
@@ -132,25 +132,23 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <section class="pop-up">
+    <section class="pop-up">                                                                  
       <h2>Напишите нам</h2>
-      <button class="pop-up-close-button" aria-label="Закрыть pop up">&#215;</button>
       <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
-        <legend class="pop-up-form">
-          <fieldset class="form-name-user">
-            <p><label for="name-user-input">Ваше имя:</label></p>
-            <p><input id="name-user-input" type="text" placeholder="Имя Фамилия" required></p>
-          </fieldset> 
-          <fieldset class="form-email-user">
-            <p><label for="email-user-input">Ваш e-mail:</label></p>
-            <p><input id="email-user-input" type="email" placeholder="email@example.com" required></p>
-          </fieldset>
-          <fieldset class="form-text-area">
-            <p><label for="text-area-user">Текст письма:</label></p>
-            <textarea class="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
-          </fieldset>   
-        </legend>
-        <button class="pop-up-send-form" aria-label="Отправка формы" type="submit">Отправить</button>
+        <p class="pop-up-form-item">
+          <label for="name-user-input">Ваше имя:</label>
+          <input id="name-user-input" type="text" placeholder="Имя Фамилия" required>
+        </p>        
+        <p class="pop-up-form-item">
+          <label for="email-user-input">Ваш e-mail:</label>
+          <input id="email-user-input" type="email" placeholder="email@example.com" required>
+        </p>        
+        <p class="pop-up-form-item">
+          <label for="text-area-user">Текст письма:</label>
+          <textarea id="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+        </p>        
+        <button class="pop-up-send-form" type="submit">Отправить</button>
+        <button class="pop-up-close-button" aria-label="Закрыть pop up">&#215;</button>
       </form>
     </section>
   </body>
