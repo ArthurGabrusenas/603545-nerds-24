@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.main-header {
+    background-color: #eeeeee;
+}
+.header-navigation a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
+/*//////////скрытые элементы//////////*/
+
+.hidden-item {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0px;
+}
+
+.pop-up{
+    visibility: hidden;
+}
+/*Шрифты и фоны*/
+/*///////////index/////////////*/
+.slider{
+    background-color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
+}
+.slider-list h3 {
+    font-size: 55px;
+    color: #000000;
+}
+.slider-list p {
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+}
+.slider-list-button {
+    background-color: #fb565a;
+    color: #ffffff;
+}
+.services {
+    font-family: 'Roboto', sans-serif;
+}
+.services-list h3 {
+    font-size: 24px;
+}
+.services-list p {
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+}
+.services-list-button{
+    color: #ffffff;
+}
+.services-site-button {
+    background-color: #fb565a;
+} 
+.services-app-button {
+    background-color: #00ca74;
+} 
+.services-presentation-button {
+    background-color: #efc84a;
+}
+.about-us{
+    font-family: 'Roboto', sans-serif;
+}
+.about-us-principles .about-us-slogan {
+    color: #000000;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: none;
+}
+.about-us-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #283136;
+    text-transform: none;
+}
+.about-us-principles-list {
+    text-transform: none;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+}
+.about-us-statistics table tr:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    font-size: 45px;
+}
+.about-us-statistics table tr:nth-child(2) {
+    text-transform: none;
+    color: #283136;
+    font-size: 16px;
+}
+footer{
+    font-family: 'Roboto', sans-serif;
+}
+.footer-navigation{
+    background-color: #ffffff;
+}
+address {
+    font-style: normal;
+}
+address p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+address p:nth-child(2) {
+    text-transform: none;
+    color: #8f8f8f;
+}
+address p:nth-child(2) a {
+    color: #8f8f8f;
+}
+.footer-navigation .write-us {
+    color: #ffffff;
+    background-color: #fb565a;
+}
+.tagline{
+    text-transform: none;
+}
+.tagline p:first-child {
+    font-size: 36px;
+}
+.tagline p:nth-child(2) {
+    font-size: 16px;
+    color: #444444;
+}
+/*/////////////shop/////////*/
+h1 {
+    font-size: 55px;
+    color: #000000;
+    text-transform: none;
+    background-color: #eeeeee;
+}
+.filter {
+    font-family: 'Roboto', sans-serif;
+}
+.filter-headline {
+    font-weight: bold;
+    font-size: 18px;
+}
+.filter-grid label {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    color: #283136;
+}
+.filter-features label {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    color: #283136;
+}
+.filter-type-list a {
+    color: #b2b2b2;
+}
+.filter-type-list a:hover {
+    color: #000000;
+}
+.catalog-decorative-control-panel {
+    background-color: #e9e9e9;
+}
+.catalog-decorative-control-panel:hover {
+    background-color: #e9e9e9;
+}
+.catalog-item-buy {
+    background-color: #eeeeee;
+}
+.catalog-item-buy h3 {
+    font-size: 18px;
+}
+.catalog-item-buy p {
+    text-transform: none;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 500;
+}
+.catalog-item-buy a {
+    color: #ffffff;
+    background-color: #fb565a;
+    font-size: 16px; 
+}
+.catalog-list-nav a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+}
+.catalog-list-nav a:hover {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ffffff;
+    border: 3px solid #dbdbdb;
+}

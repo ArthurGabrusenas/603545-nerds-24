@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -25,16 +28,16 @@
       <h1>Магазин готовых шаблонов</h1>        
       <section class="filter">
         <h2 class="hidden-item">Фильтры</h2>
-        <form action="http://echo.htmlacademy.ru" class="filter-form" method="get">                                         
+        <form action="http://echo.htmlacademy.ru" class="filter-form" method="get">             
           <fieldset class="filter-form-item">
-            <legend class="filter-headline">Стоимость</legend>  
+            <legend class="filter-headline">Стоимость:</legend>  
             <p>от</p>
             <input type="text" aria-label="Стоимость от">
             <p>до</p>
             <input type="text" aria-label="Стоимость до">
           </fieldset>
           <fieldset class="filter-form-item"> 
-            <legend class="filter-headline">Сетка:</legend>                           
+            <legend class="filter-headline">Сетка:</legend>
             <div class="filter-grid">
               <ul>
                 <li><input type="radio" name="site-adaptive" id="site-adaptive">
@@ -51,7 +54,7 @@
             </div> 
           </fieldset>
           <fieldset class="filter-form-item">
-            <legend class="filter-headline">Особенности</legend>
+            <legend class="filter-headline">Особенности:</legend>
             <div class="filter-features">
                 <ul>
                     <li>
@@ -83,7 +86,7 @@
       <section class="catalog">
           <h2 class="hidden-item">Каталог готовых шаблонов</h2>
           <div class="filter-type">                                                       
-            <p>Сортировать</p>
+            <p class="filter-headline">Сортировать:</p>
               <ul class="filter-type-list">
                 <li><a href="">По цене</a></li>
                 <li><a href="">По типу</a></li>
@@ -216,7 +219,7 @@
           <address>
             <p>Nёrds design studio</p>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p> 
-            <a href="#">Напишите нам</a>
+            <a href="#" class="write-us">Напишите нам</a>
           </address>
       </nav>  
       <ul class="social-list">
