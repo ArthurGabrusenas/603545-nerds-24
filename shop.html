@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <nav class="header-navigation">
+      <nav class="header-navigation title-text">
         <a href="index.html">
           <img src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65">
         </a>
@@ -25,16 +28,16 @@
       <h1>Магазин готовых шаблонов</h1>        
       <section class="filter">
         <h2 class="hidden-item">Фильтры</h2>
-        <form action="http://echo.htmlacademy.ru" class="filter-form" method="get">                                         
+        <form action="http://echo.htmlacademy.ru" class="filter-form" method="get">             
           <fieldset class="filter-form-item">
-            <legend class="filter-headline">Стоимость</legend>  
+            <legend class="filter-headline title-text">Стоимость:</legend>  
             <p>от</p>
             <input type="text" aria-label="Стоимость от">
             <p>до</p>
             <input type="text" aria-label="Стоимость до">
           </fieldset>
           <fieldset class="filter-form-item"> 
-            <legend class="filter-headline">Сетка:</legend>                           
+            <legend class="filter-headline title-text">Сетка:</legend>
             <div class="filter-grid">
               <ul>
                 <li><input type="radio" name="site-adaptive" id="site-adaptive">
@@ -51,7 +54,7 @@
             </div> 
           </fieldset>
           <fieldset class="filter-form-item">
-            <legend class="filter-headline">Особенности</legend>
+            <legend class="filter-headline title-text">Особенности:</legend>
             <div class="filter-features">
                 <ul>
                     <li>
@@ -77,14 +80,14 @@
                 </ul>
             </div>
           </fieldset>   
-          <button class="filter-form-button" aria-label="Отправка формы">Показать</button>    
+          <button class="filter-form-button title-text" aria-label="Отправка формы">Показать</button>    
         </form>         
       </section>
       <section class="catalog">
           <h2 class="hidden-item">Каталог готовых шаблонов</h2>
           <div class="filter-type">                                                       
-            <p>Сортировать</p>
-              <ul class="filter-type-list">
+            <p class="filter-headline title-text">Сортировать:</p>
+              <ul class="filter-type-list title-text">
                 <li><a href="">По цене</a></li>
                 <li><a href="">По типу</a></li>
                 <li><a href="">По названию</a></li>
@@ -103,7 +106,7 @@
               <div class="catalog-item-buy">
                 <h3>Sedona</h3>                                                                               
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="catalog-item-buy-button">
+                <a href="#" class="catalog-item-buy-button title-text">
                   <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                 </a>      
               </div>                                                                                            
@@ -120,7 +123,7 @@
               <div class="catalog-item-buy">
                   <h3>Pink app</h3>                                                                 
                   <p>Продуктовый лендинг приложения для ios и android</p>
-                  <a href="#" class="catalog-item-buy-button">
+                  <a href="#" class="catalog-item-buy-button title-text">
                     <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                   </a>
                 </div>
@@ -137,7 +140,7 @@
               <div class="catalog-item-buy">
                   <h3>Barbershop</h3>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
-                  <a href="#" class="catalog-item-buy-button">
+                  <a href="#" class="catalog-item-buy-button title-text">
                     <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                   </a>
                 </div>
@@ -154,7 +157,7 @@
               <div class="catalog-item-buy">
                   <h3>Mishka</h3>
                   <p>Интернет-магазин вязаных игрушек</p>
-                  <a href="#" class="catalog-item-buy-button">
+                  <a href="#" class="catalog-item-buy-button title-text">
                       <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                   </a>
               </div>
@@ -171,7 +174,7 @@
               <div class="catalog-item-buy">
                   <h3>A plus</h3>
                   <p>Лендинг курсов повышения квалификации</p>
-                  <a href="#" class="catalog-item-buy-button">
+                  <a href="#" class="catalog-item-buy-button title-text">
                       <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                   </a>
               </div>
@@ -188,13 +191,13 @@
               <div class="catalog-item-buy">
                   <h3>Кваст</h3>
                   <p>Промо-сайт производителя крафтового кваса</p>
-                  <a href="#" class="catalog-item-buy-button">
+                  <a href="#" class="catalog-item-buy-button title-text">
                       <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                   </a>
               </div>
             </li>
           </ul>
-          <ul class="catalog-list-nav">
+          <ul class="catalog-list-nav title-text">
             <li>
               <a href="#">1</a>
             </li>
@@ -214,9 +217,9 @@
       <nav class="footer-navigation">
           <img src="img/footer-navigation-map.jpg" width="400" height="200" alt="Местоположение на карте">
           <address>
-            <p>Nёrds design studio</p>
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p> 
-            <a href="#">Напишите нам</a>
+            <p class="title-text">Nёrds design studio</p>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575" class="footer-navigation-phone-number">тел. +7 (812) 275-75-75</a></p> 
+            <a href="#" class="write-us title-text">Напишите нам</a>
           </address>
       </nav>  
       <ul class="social-list">

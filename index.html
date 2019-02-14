@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <nav class="header-navigation">
+      <nav class="header-navigation title-text">
         <a>
           <img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65"> 
         </a>
@@ -24,22 +27,22 @@
     <main>
       <h1 class="hidden-item">Web-студия Нёрдс</h1>
       <section class="slider">
-        <h2>Слайдер</h2>
+        <h2 class="hidden-item">Слайдер</h2>
         <ul class="slider-list">
           <li>
             <h3>Долго, дорого, скрупулезно.</h3>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="slider-list-button" href="#">Узнать больше</a>                                                               
+            <a class="slider-list-button title-text" href="#">Узнать больше</a>                
           </li>
           <li>
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-list-button" href="#">Узнать больше</a>                                                               
+            <a class="slider-list-button title-text" href="#">Узнать больше</a>                
           </li>
           <li>
             <h3>Только ночь, только хардкор</h3>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="slider-list-button" href="#">Узнать больше</a> 
+            <a class="slider-list-button title-text" href="#">Узнать больше</a> 
           </li>
         </ul>
       </section>
@@ -47,22 +50,22 @@
         <h2 class="hidden-item">Услуги</h2>
           <ul class="services-list">
             <li>
-              <h3>Веб-Сайты</h3>
+              <h3 class="title-text">Веб-Сайты</h3>
               <img src="img/services-list-site.png" alt="Веб-сайты" width="300" height="146">               
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
-              <a class="services-list-button services-site-button" href="toOrder.html">Заказать</a>
+              <a class="services-list-button services-site-button title-text" href="toOrder.html">Заказать</a>
             </li>
             <li>
-              <h3>Приложения</h3>
+              <h3 class="title-text">Приложения</h3>
               <img src="img/services-list-app.png" alt="Приложения" width="300" height="146">     
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="services-list-button services-app-button" href="toOrder.html">Заказать</a>
+              <a class="services-list-button services-app-button title-text" href="toOrder.html">Заказать</a>
             </li>
             <li>
-              <h3>Презентации</h3>
+              <h3 class="title-text">Презентации</h3>
               <img src="img/services-list-presentation.png" alt="Презентации" width="300" height="146">
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="services-list-button services-presentation-button" href="toOrder.html">Заказать</a>
+              <a class="services-list-button services-presentation-button title-text" href="toOrder.html">Заказать</a>
             </li>
           </ul>
       </section>
@@ -70,8 +73,8 @@
         <h2 class="hidden-item">О нас</h2>
         <div class="about-us-principles">
           <p class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h3>Выполняем заказы на разработку:</h3>
+          <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="title-text">Выполняем заказы на разработку:</h3>
           <ul class="about-us-principles-list">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
@@ -80,7 +83,7 @@
         </div>
         <div class="about-us-statistics">
           <img src="img/about-us-statistics-logo.png" alt="Web-студия Нёрдс" width="360" height="208">
-          <p>с 2004 года Любим точность во всем:</p>
+          <p class="title-text">с 2004 года Любим точность во всем:</p>
           <table>
             <tr>
               <td>146<span>%</span></td>
@@ -117,9 +120,9 @@
       <nav class="footer-navigation">
         <img src="img/footer-navigation-map.jpg" width="1440" height="416" alt="Местоположение на карте">
         <address>
-          <p>Nёrds design studio</p>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p> 
-          <a href="#">Напишите нам</a>
+          <p class="title-text">Nёrds design studio</p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575" class="footer-navigation-phone-number">тел. +7 (812) 275-75-75</a></p> 
+          <a href="#" class="write-us title-text">Напишите нам</a>
         </address>
       </nav>  
       <ul class="social-list">
@@ -132,7 +135,7 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <section class="pop-up">                                                                  
+    <section class="pop-up">                                                        
       <h2>Напишите нам</h2>
       <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
         <p class="pop-up-form-item">
