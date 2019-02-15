@@ -92,8 +92,8 @@ address p:nth-child(2) {
 .pop-up{
     display: none;
 }
-/*Шрифты и фоны*/
 
+/*Шрифты и фоны*/
 /*index*/
 .slider{
     background-color: #eeeeee;
@@ -271,7 +271,6 @@ address p:nth-child(2) {
 }
 
 /*сетка*/
-
 /*index*/
 .header-navigation {
     display: flex;
@@ -280,7 +279,6 @@ address p:nth-child(2) {
     margin-right: auto;
     width: 1200px;
 }
-
 .slider-list {
     display: flex;
     margin-left: auto;
