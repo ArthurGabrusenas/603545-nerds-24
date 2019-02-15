@@ -87,12 +87,12 @@ address p:nth-child(2) {
 .pop-up{
     display: none;
 }
-ul {
-    list-style-type: none;
-}
 /*Шрифты и фоны*/
 
 /*index*/
+.main-header ul, .slider ul, .services ul, .about-us ul, .partners ul, .footer-navigation ul, .social-list {
+    list-style-type: none;
+}
 .slider{
     background-color: #eeeeee;
 }
