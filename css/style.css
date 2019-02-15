@@ -9,14 +9,11 @@ html, body {
     color: #000000;
     font-weight: 400;
 }
-.title-text {
-    text-transform: uppercase;
-}
 a {
     text-decoration: none;
 }
-ul{
-    list-style-type: none;
+.title-text {
+    text-transform: uppercase;
 }
 .main-header {
     background-color: #eeeeee;
@@ -28,15 +25,9 @@ ul{
     color: #000000;
 }
 .header-navigation a:hover {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
     color: #fb565a;
 }
 .header-navigation a:active {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
     color: #bababa;
 }
 .target {
@@ -50,9 +41,6 @@ ul{
     margin: -1px;
     padding: 0px;
     border: 0px;
-}
-footer{
-    font-family: 'Roboto', sans-serif;
 }
 address {
     font-style: normal;
@@ -99,6 +87,9 @@ address p:nth-child(2) {
 .pop-up{
     display: none;
 }
+ul {
+    list-style-type: none;
+}
 /*Шрифты и фоны*/
 
 /*index*/
@@ -120,20 +111,13 @@ address p:nth-child(2) {
 .slider-list-button {
     background-color: #fb565a;
     color: #ffffff;
-    line-height: 18px;
 }
 .slider-list-button:hover {
     background-color: #e74246;
-    color: #ffffff;
-    line-height: 18px;
 }
 .slider-list-button:active {
     background-color: #d7373b;
     color: #e37376;
-    line-height: 18px;
-}
-.services {
-    font-family: 'Roboto', sans-serif;
 }
 .services-list h3 {
     font-size: 24px;
@@ -182,9 +166,6 @@ address p:nth-child(2) {
     color: #edc265;
     border-top: 2px solid #ce961f;
 }
-.about-us{
-    font-family: 'Roboto', sans-serif;
-}
 .about-us-principles .about-us-slogan {
     color: #000000;
     font-size: 45px;
@@ -213,7 +194,7 @@ address p:nth-child(2) {
     line-height: 18px;
 }
 /*shop*/
-h1 {
+.headline-shop {  
     font-size: 55px;
     color: #000000;
     background-color: #eeeeee;
@@ -270,16 +251,10 @@ h1 {
     line-height: 18px;
 }
 .catalog-item-buy-button:hover {
-    color: #ffffff;
     background-color: #e74246;
-    font-size: 16px; 
-    line-height: 18px;
 }
 .catalog-item-buy-button:active {
-    color: #ffffff;
     background-color: #d7373b;
-    font-size: 16px; 
-    line-height: 18px;
 }
 .catalog-list-nav a {
     color: #000000;
@@ -289,9 +264,6 @@ h1 {
     border: 3px solid #eeeeee;
 }
 .catalog-list-nav a:hover {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 500;
     background-color: #ffffff;
     border: 3px solid #dbdbdb;
 }
