@@ -12,6 +12,11 @@ html, body {
 a {
     text-decoration: none;
 }
+header ul, main ul, footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 .title-text {
     text-transform: uppercase;
 }
@@ -90,9 +95,6 @@ address p:nth-child(2) {
 /*Шрифты и фоны*/
 
 /*index*/
-.main-header ul, .slider ul, .services ul, .about-us ul, .partners ul, .footer-navigation ul, .social-list {
-    list-style-type: none;
-}
 .slider{
     background-color: #eeeeee;
 }
@@ -266,4 +268,72 @@ address p:nth-child(2) {
 .catalog-list-nav a:hover {
     background-color: #ffffff;
     border: 3px solid #dbdbdb;
+}
+
+/*сетка*/
+
+/*index*/
+.header-navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+.slider-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+.slider-list h3 {
+    margin: 0;
+}
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+.slider-list li {
+    width: 33%;
+}
+.partners-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+.index-footer-columns {
+    display: flex;
+    justify-content: center;
+}
+.tagline {
+    margin-left: 125px;
+}
+/*shop*/
+.headline-shop {
+    text-align: center;
+    margin: 0;
+    padding:  115px 0; 
+}
+.shop-main-columns {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.filter {
+    width: 350px;
+}
+.catalog {
+    width: 850px;
+    margin-left: 100px;
+}
+.catalog-list-template {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
