@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="header-navigation title-text">
+      <nav class="header-navigation title-text container">
         <a>
           <img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65"> 
         </a>
@@ -27,27 +27,29 @@
     <main>
       <h1 class="hidden-item">Web-студия Нёрдс</h1>
       <section class="slider">
-        <h2 class="hidden-item">Слайдер</h2>
-        <ul class="slider-list">
-          <li>
-            <h3>Долго, дорого, скрупулезно.</h3>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="slider-list-button title-text" href="#">Узнать больше</a>                
-          </li>
-          <li>
-            <h3>Любим математику как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-list-button title-text" href="#">Узнать больше</a>                
-          </li>
-          <li>
-            <h3>Только ночь, только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="slider-list-button title-text" href="#">Узнать больше</a> 
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="hidden-item">Слайдер</h2>
+          <ul class="slider-list">
+            <li>
+              <h3>Долго, дорого, скрупулезно.</h3>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="slider-list-button title-text" href="#">Узнать больше</a>                
+            </li>
+            <li>
+              <h3>Любим математику как никто другой</h3>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider-list-button title-text" href="#">Узнать больше</a>                
+            </li>
+            <li>
+              <h3>Только ночь, только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="slider-list-button title-text" href="#">Узнать больше</a> 
+            </li>
+          </ul>
+        </div>  
       </section>
-      <section class="services">
-        <h2 class="hidden-item">Услуги</h2>
+      <section class="services container">
+          <h2 class="hidden-item">Услуги</h2>
           <ul class="services-list">
             <li>
               <h3 class="title-text">Веб-Сайты</h3>
@@ -69,7 +71,7 @@
             </li>
           </ul>
       </section>
-      <section class="about-us">
+      <section class="about-us container">
         <h2 class="hidden-item">О нас</h2>
         <div class="about-us-principles">
           <p class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
@@ -98,7 +100,7 @@
           </table>
         </div>
       </section>
-      <section class="partners">
+      <section class="partners container">
         <h2 class="hidden-item">Наши партнеры</h2>
         <ul class="partners-list">
           <li>
@@ -125,7 +127,7 @@
           <a href="#" class="write-us title-text">Напишите нам</a>
         </address>
       </nav>  
-      <div class="index-footer-columns">
+      <div class="index-footer-columns container">
         <ul class="social-list">
           <li><a class="social-item vk" href="#">Вконтакте</a></li>
           <li><a class="social-item facebook" href="#">Facebook</a></li>
@@ -142,11 +144,11 @@
       <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
         <p class="pop-up-form-item">
           <label for="name-user-input">Ваше имя:</label>
-          <input id="name-user-input" type="text" placeholder="Имя Фамилия" required>
+          <input name="user-name" id="name-user-input" type="text" placeholder="Имя Фамилия" required>
         </p>        
         <p class="pop-up-form-item">
           <label for="email-user-input">Ваш e-mail:</label>
-          <input id="email-user-input" type="email" placeholder="email@example.com" required>
+          <input name="user-email" id="email-user-input" type="email" placeholder="email@example.com" required>
         </p>        
         <p class="pop-up-form-item">
           <label for="text-area-user">Текст письма:</label>

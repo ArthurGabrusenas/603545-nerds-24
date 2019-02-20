@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="header-navigation title-text">
+      <nav class="header-navigation title-text container">
         <a href="index.html">
           <img src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65">
         </a>
@@ -26,29 +26,31 @@
     </header>  
     <main> 
       <h1 class="headline-shop">Магазин готовых шаблонов</h1>
-      <div class="shop-main-columns">
+      <div class="shop-main-columns container">
         <section class="filter">
           <h2 class="hidden-item">Фильтры</h2>
           <form action="http://echo.htmlacademy.ru" class="filter-form" method="get">             
             <fieldset class="filter-form-item">
               <legend class="filter-headline title-text">Стоимость:</legend>  
               <p>от</p>
-              <input type="text" aria-label="Стоимость от">
+              <input class="filter-form-item-style" name="price-from" type="text" aria-label="Стоимость от">
               <p>до</p>
-              <input type="text" aria-label="Стоимость до">
+              <input class="filter-form-item-style" name="price-up"  type="text" aria-label="Стоимость до">
             </fieldset>
             <fieldset class="filter-form-item"> 
               <legend class="filter-headline title-text">Сетка:</legend>
               <div class="filter-grid">
                 <ul>
-                  <li><input type="radio" name="site-adaptive" id="site-adaptive">
+                  <li>
+                    <input type="radio" name="site-adaptive" id="site-adaptive">
                     <label for="site-adaptive">Адаптивная</label>
                   </li>
-                  <li><input type="radio" name="site-adaptive" id="site-fixed">
+                  <li>
+                    <input type="radio" name="site-fixed" id="site-fixed">
                     <label for="site-fixed">Фиксированная</label>
                   </li>
                   <li>
-                    <input type="radio" name="site-adaptive" id="site-stretch">
+                    <input type="radio" name="site-stretch" id="site-stretch">
                     <label for="site-stretch">Резиновая</label>
                   </li>
                 </ul>
@@ -59,23 +61,23 @@
               <div class="filter-features">
                   <ul>
                       <li>
-                        <input type="checkbox" id="filter-features-slider">
+                        <input name="slider" type="checkbox" id="filter-features-slider">
                         <label for="filter-features-slider">Слайдер</label>
                       </li>                             
                       <li>
-                        <input type="checkbox" id="filter-features-advantage">
+                        <input name="advantages" type="checkbox" id="filter-features-advantage">
                         <label for="filter-features-advantage">Блок преимуществ</label>
                       </li>
                       <li>
-                        <input type="checkbox" id="filter-features-news">
+                        <input name="news" type="checkbox" id="filter-features-news">
                         <label for="filter-features-news">Новости</label>
                       </li>
                       <li>
-                        <input type="checkbox" id="filter-features-gallery">
+                        <input name="gallery" type="checkbox" id="filter-features-gallery">
                         <label for="filter-features-gallery">Галерея</label>
                       </li>
                       <li>
-                        <input type="checkbox" id="filter-features-basket">
+                        <input name="shoppingbasket" type="checkbox" id="filter-features-basket">
                         <label for="filter-features-basket">Корзина</label>
                       </li>
                   </ul>
@@ -105,11 +107,13 @@
                     <img src="img/catalog-sedona.jpg" alt="Проект Sedona" width="360" height="576">
                 </a>
                 <div class="catalog-item-buy">
-                  <h3>Sedona</h3>                                                                               
-                  <p>Информационный сайт для туристов</p>
-                  <a href="#" class="catalog-item-buy-button title-text">
-                    <span class="hidden-item">кнопка покупки</span> 9 900 руб.
-                  </a>      
+                    <div class="catalog-item-buy-column">
+                    <h3>Sedona</h3>                                                                               
+                    <p>Информационный сайт для туристов</p>
+                    <a href="#" class="catalog-item-buy-button title-text">
+                      <span class="hidden-item">кнопка покупки</span> 9 900 руб.
+                    </a>      
+                  </div>  
                 </div>                                                                                            
               </li>
               <li class="catalog-item">
@@ -122,12 +126,14 @@
                   <img src="img/catalog-pink.jpg" alt="Проект Pink" width="360" height="576">
                 </a>
                 <div class="catalog-item-buy">
-                    <h3>Pink app</h3>                                                                 
+                  <div class="catalog-item-buy-column">
+                    <h3>Pink app</h3>                                                 
                     <p>Продуктовый лендинг приложения для ios и android</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                       <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                     </a>
-                  </div>
+                  </div>  
+                </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-decorative-control-panel">
@@ -139,12 +145,14 @@
                     <img src="img/catalog-barber-shop.jpg" alt="Проект Barbershop" width="360" height="576">
                 </a>
                 <div class="catalog-item-buy">
+                  <div class="catalog-item-buy-column">
                     <h3>Barbershop</h3>
                     <p>Сайт салона красоты. Для мужчин, да.</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                       <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                     </a>
-                  </div>
+                  </div>  
+                </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-decorative-control-panel">
@@ -156,11 +164,13 @@
                     <img src="img/catalog-mishka.jpg" alt="Проект Mishka" width="360" height="576">
                 </a>
                 <div class="catalog-item-buy">
+                  <div class="catalog-item-buy-column">
                     <h3>Mishka</h3>
                     <p>Интернет-магазин вязаных игрушек</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                         <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                     </a>
+                  </div>  
                 </div>
               </li>
               <li class="catalog-item">
@@ -173,11 +183,13 @@
                     <img src="img/catalog-a-plus.jpg" alt="A plus" width="360" height="576">
                 </a>
                 <div class="catalog-item-buy">
+                  <div class="catalog-item-buy-column">
                     <h3>A plus</h3>
                     <p>Лендинг курсов повышения квалификации</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                         <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                     </a>
+                  </div>  
                 </div>
               </li>
               <li class="catalog-item">
@@ -190,11 +202,13 @@
                     <img src="img/catalog-kvass.jpg" alt="Кваст" width="360" height="576">
                 </a>
                 <div class="catalog-item-buy">
+                  <div class="catalog-item-buy-column">
                     <h3>Кваст</h3>
                     <p>Промо-сайт производителя крафтового кваса</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                         <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                     </a>
+                  </div>  
                 </div>
               </li>
             </ul>
@@ -216,15 +230,15 @@
       </div>  
     </main>
     <footer>
-      <nav class="footer-navigation">
-          <img src="img/footer-navigation-map.jpg" width="400" height="200" alt="Местоположение на карте">
+      <div class="footer-navigation">
+          <img src="img/footer-navigation-map.jpg" width="1440" height="416" alt="Местоположение на карте">
           <address>
             <p class="title-text">Nёrds design studio</p>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575" class="footer-navigation-phone-number">тел. +7 (812) 275-75-75</a></p> 
             <a href="#" class="write-us title-text">Напишите нам</a>
           </address>
-      </nav> 
-      <div class="index-footer-columns">  
+      </div> 
+      <div class="index-footer-columns container">  
         <ul class="social-list">
           <li><a class="social-item vk" href="#">Вконтакте</a></li>
           <li><a class="social-item facebook" href="#">Facebook</a></li>
@@ -241,15 +255,15 @@
       <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
         <p class="pop-up-form-item">
           <label for="name-user-input">Ваше имя:</label>
-          <input id="name-user-input" type="text" placeholder="Имя Фамилия" required>
+          <input class="pop-up-form-item-style" name="user-name" id="name-user-input" type="text" placeholder="Имя Фамилия" required>
         </p>        
         <p class="pop-up-form-item">
           <label for="email-user-input">Ваш e-mail:</label>
-          <input id="email-user-input" type="email" placeholder="email@example.com" required>
+          <input class="pop-up-form-item-style" name="user-email" id="email-user-input" type="email" placeholder="email@example.com" required>
         </p>        
         <p class="pop-up-form-item">
           <label for="text-area-user">Текст письма:</label>
-          <textarea id="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+          <textarea class="pop-up-form-item-style" id="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
         </p>        
         <button class="pop-up-send-form" type="submit">Отправить</button>
         <button class="pop-up-close-button" aria-label="Закрыть pop up">&#215;</button>
