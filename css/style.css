@@ -251,9 +251,6 @@ address p:nth-child(2) {
     background-color: #d5d5d5;
     color: #959595;
     border-top: 3px solid #bfbfbf;}
-.filter-form-button:hover {
-    background-color: #dfdfdf;
-}
 .filter-form-button:active {
     background-color: #d5d5d5;
     color: #959595;
@@ -332,17 +329,16 @@ address p:nth-child(2) {
 }
 /*сетка*/
 /*index*/ 
-* {
-    box-sizing: content-box;
-}
 .container {
     width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
+    box-sizing: content-box;
 }
 .header-navigation {
     display: flex;
     justify-content: space-between;
+    box-sizing: content-box;
 }
 .header-logo {
     width: 160px;
@@ -351,7 +347,7 @@ address p:nth-child(2) {
     width: 440px;
 }
 .basket {
-    width:120px;
+    width:160px;
 }
 .slider-list {
     display: flex;
@@ -368,6 +364,7 @@ address p:nth-child(2) {
 }
 .about-us {
     display: flex;
+    box-sizing: content-box;
 }
 .about-us-principles {
     width: 660px;
