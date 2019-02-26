@@ -209,7 +209,7 @@
                         <span></span>
                         <span></span>
                       </div>    
-                    </div>
+                  </div>
                 <a href="#">
                     <img src="img/catalog-kvass.jpg" alt="Кваст" width="360" height="576">
                 </a>
@@ -226,7 +226,7 @@
             </ul>
             <ul class="catalog-list-nav title-text">
               <li>
-                <a class="catalog-list-nav-number catalog-list-nav-item" href="#">1</a>
+                <a class="catalog-list-nav-target catalog-list-nav-number catalog-list-nav-item" href="#">1</a>
               </li>
               <li>
                   <a class="catalog-list-nav-number catalog-list-nav-item" href="#">2</a>
@@ -242,8 +242,8 @@
       </div>  
     </main>
     <footer>
-      <div class="footer-item">
-        <img src="img/footer-navigation-map.jpg" width="100%" height="auto" alt="Местоположение на карте">
+      <div class="footer-item footer-item-shop">
+        <img src="img/footer-navigation-map.jpg" width="1440" height="415" alt="Местоположение на карте">
         <address class="main-footer-address">
           <p class="title-text main-footer-address-item">Nёrds design studio</p>
           <p class="main-footer-post-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575" class="footer-navigation-phone-number">тел. +7 (812) 275-75-75</a></p> 
@@ -268,30 +268,32 @@
         </div>
       </div>  
     </footer>
-    <section class="pop-up">
-      <div class="pop-up-columns">
-        <h2>Напишите нам</h2>
-        <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
-          <div class="pop-up-columns-item">
-            <p class="pop-up-form-item">
-              <label for="name-user-input">Ваше имя:</label>
-              <input class="pop-up-form-item-input" name="user-name" id="name-user-input" type="text" placeholder="Имя Фамилия" required>
+    <div class="container-pop-up">
+      <section class="pop-up">
+        <div class="pop-up-columns">
+          <h2>Напишите нам</h2>
+          <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
+            <div class="pop-up-columns-item">
+              <p class="pop-up-form-item">
+                <label for="name-user-input">Ваше имя:</label>
+                <input class="pop-up-form-item-input" name="user-name" id="name-user-input" type="text" placeholder="Имя Фамилия" required>
+              </p>        
+              <p class="pop-up-form-item">
+                <label for="email-user-input">Ваш e-mail:</label>
+                <input class="pop-up-form-item-input" name="user-email" id="email-user-input" type="email" placeholder="email@example.com" required>
+              </p>
+            </div>          
+            <p class="pop-up-form-item pop-up-form-textarea">
+              <label for="text-area-user">Текст письма:</label>
+              <textarea id="text-area-user" name="user-text" placeholder="В свободной форме" required></textarea>
             </p>        
-            <p class="pop-up-form-item">
-              <label for="email-user-input">Ваш e-mail:</label>
-              <input class="pop-up-form-item-input" name="user-email" id="email-user-input" type="email" placeholder="email@example.com" required>
-            </p>
-          </div>          
-          <p class="pop-up-form-item pop-up-form-textarea">
-            <label for="text-area-user">Текст письма:</label>
-            <textarea id="text-area-user" name="user-text" placeholder="В свободной форме" required></textarea>
-          </p>        
-          <button class="pop-up-send-form" type="submit">Отправить</button>
-          <button class="pop-up-close-button" aria-label="Закрыть pop up">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
-          </button>
-        </form>
-      </div>                                                          
-    </section>
+            <button class="pop-up-send-form" type="submit">Отправить</button>
+            <button class="pop-up-close-button" aria-label="Закрыть pop up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+            </button>
+          </form>
+        </div>                                                          
+      </section>
+    </div>  
   </body>
 </html>
