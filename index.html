@@ -9,8 +9,8 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="container header-navigation title-text">
-            <img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65"> 
+      <nav class="container header-navigation title-text">  
+          <a><img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65"> </a>
           <ul class="header-navigation-menu">
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
@@ -26,25 +26,33 @@
       <h1 class="hidden-item">Web-студия Нёрдс</h1>
       <section class="slider">
         <div class="container">
-          <h2 class="hidden-item">Слайдер</h2>
+          <h2 class="hidden-item">Преимущества</h2>
+          <input class="hidden-item" type="radio" id="product-1" name="toggle" checked>
+          <input class="hidden-item" type="radio" id="product-2" name="toggle">
+          <input class="hidden-item" type="radio" id="product-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+          </div>
           <ul class="slider-list">
-            <li>
-              <h3>Долго, дорого, скрупулезно.</h3>
-              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="slider-list-button title-text" href="#">Узнать больше</a>                
+            <li class="slider-item">
+              <h3>Долго, дорого,<br> скрупулезно.</h3>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
-            <li>
+            <li class="slider-item">
               <h3>Любим математику как никто другой</h3>
               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider-list-button title-text" href="#">Узнать больше</a>                
+              <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
-            <li>
-              <h3>Только ночь, только хардкор</h3>
-              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="slider-list-button title-text" href="#">Узнать больше</a> 
+            <li class="slider-item">
+              <h3>Только ночь,<br> только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
-          </ul>
-        </div>  
+          </ul>  
+        </div>
       </section>
       <section class="services container">
           <h2 class="hidden-item">Услуги</h2>
@@ -68,10 +76,7 @@
                 <a class="services-list-button services-presentation-button title-text" href="toOrder.html">Заказать</a>
               </li>
             </ul>    
-      </section>
-      <div class="container">
-        <hr class="line-separation">
-      </div>  
+      </section>  
       <section class="about-us container">
         <h2 class="hidden-item">О нас</h2>
         <div class="about-us-principles">
@@ -100,40 +105,36 @@
             </tr>
           </table>
         </div>
-      </section>
-      <div class="container">
-        <hr class="line-separation">
-      </div>  
+      </section> 
       <section class="partners container">
         <h2 class="hidden-item">Наши партнеры</h2>
         <ul class="partners-list">
           <li>
             <a href="#"><img src="img/partners-html-academy.png" alt="Html Academy" width="199" height="68"></a>
           </li>
-          <li>
+          <li class="partners-list-item">
               <a href="#"><img src="img/partners-borodinski.png" alt="Барбершоп Borodinski" width="209" height="87"></a> 
           </li>
-          <li>
+          <li class="partners-list-item">
               <a href="#"><img src="img/partners-pink.png" alt="Pink" width="185" height="52"></a> 
           </li>
-          <li>
+          <li class="partners-list-item">
               <a href="#"><img src="img/partners-mishka.png" alt="Mishka" width="173" height="84"></a> 
           </li>
         </ul>
-      </section>
-      <div class="container">
-          <hr class="line-separation">
-      </div> 
+      </section> 
     </main>
     <footer>
       <div class="footer-item">
         <img src="img/footer-navigation-map.jpg" width="1440" height="415" alt="Местоположение на карте">
+      </div> 
+      <div class="container">
         <address class="main-footer-address">
           <p class="title-text main-footer-address-item">Nёrds design studio</p>
           <p class="main-footer-post-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575" class="footer-navigation-phone-number">тел. +7 (812) 275-75-75</a></p> 
           <a href="#" class="write-us title-text">Напишите нам</a>
         </address>
-      </div>  
+      </div>
       <div class="footer-columns container">
         <ul class="social-list">
           <li><a class="social-item" href="#"><span class="hidden-item">Вконтакте</span>
@@ -152,9 +153,7 @@
         </div>
       </div> 
     </footer>
-    <div class="container-pop-up">
-      <section class="pop-up">
-        <div class="pop-up-columns">
+      <section class="pop-up hidden-item">
           <h2>Напишите нам</h2>
           <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
             <div class="pop-up-columns-item">
@@ -175,9 +174,7 @@
             <button class="pop-up-close-button" aria-label="Закрыть pop up">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
             </button>
-          </form>
-        </div>                                                          
+          </form>                                                
       </section> 
-    </div>
   </body>
 </html>
