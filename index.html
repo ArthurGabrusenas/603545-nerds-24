@@ -9,77 +9,80 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="header-navigation title-text container">
-        <a>
-          <img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65"> 
-        </a>
-        <ul class="header-navigation-menu">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="basket">
-          <li><a class="basket-item" href="#">Корзина</a></li>
-        </ul>
+      <nav class="container header-navigation title-text">  
+          <a><img class="header-logo" src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65"> </a>
+          <ul class="header-navigation-menu">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="shop.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="basket">
+            <li><a class="basket-item" href="#">Корзина</a></li>
+          </ul>
       </nav>
     </header>  
     <main>
       <h1 class="hidden-item">Web-студия Нёрдс</h1>
       <section class="slider">
         <div class="container">
-          <h2 class="hidden-item">Слайдер</h2>
+          <h2 class="hidden-item">Преимущества</h2>
+          <input class="hidden-item" type="radio" id="product-1" name="toggle" checked>
+          <input class="hidden-item" type="radio" id="product-2" name="toggle">
+          <input class="hidden-item" type="radio" id="product-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+          </div>
           <ul class="slider-list">
-            <li>
-              <h3>Долго, дорого, скрупулезно.</h3>
-              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="slider-list-button title-text" href="#">Узнать больше</a>                
+            <li class="slider-item">
+              <h3>Долго, дорого,<br> скрупулезно.</h3>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
-            <li>
+            <li class="slider-item">
               <h3>Любим математику как никто другой</h3>
               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider-list-button title-text" href="#">Узнать больше</a>                
+              <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
-            <li>
-              <h3>Только ночь, только хардкор</h3>
-              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="slider-list-button title-text" href="#">Узнать больше</a> 
+            <li class="slider-item">
+              <h3>Только ночь,<br> только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
-          </ul>
-        </div>  
+          </ul>  
+        </div>
       </section>
       <section class="services container">
           <h2 class="hidden-item">Услуги</h2>
-          <ul class="services-list">
-            <li>
-              <img src="img/services-list-site.png" alt="Веб-сайты" width="300" height="146">
-              <h3 class="title-text">Веб-Сайты</h3>
-              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
-              <a class="services-list-button services-site-button title-text" href="toOrder.html">Заказать</a>
-            </li>
-            <li>
-              <img src="img/services-list-app.png" alt="Приложения" width="300" height="146">     
-              <h3 class="title-text">Приложения</h3>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="services-list-button services-app-button title-text" href="toOrder.html">Заказать</a>
-            </li>
-            <li>
-              <img src="img/services-list-presentation.png" alt="Презентации" width="300" height="146">
-              <h3 class="title-text">Презентации</h3>
-              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="services-list-button services-presentation-button title-text" href="toOrder.html">Заказать</a>
-            </li>
-          </ul>
-      </section>
-      <div class="container">
-        <hr class="line-separation">
-      </div>  
+            <ul class="services-list">
+              <li>
+                <img src="img/services-list-site.png" alt="Веб-сайты" width="300" height="146">
+                <h3 class="title-text">Веб-Сайты</h3>
+                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> 
+                <a class="services-list-button services-site-button title-text" href="toOrder.html">Заказать</a>
+              </li>
+              <li>
+                <img src="img/services-list-app.png" alt="Приложения" width="300" height="146">     
+                <h3 class="title-text">Приложения</h3>
+                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                <a class="services-list-button services-app-button title-text" href="toOrder.html">Заказать</a>
+              </li>
+              <li>
+                <img src="img/services-list-presentation.png" alt="Презентации" width="300" height="146">
+                <h3 class="title-text">Презентации</h3>
+                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="services-list-button services-presentation-button title-text" href="toOrder.html">Заказать</a>
+              </li>
+            </ul>    
+      </section>  
       <section class="about-us container">
         <h2 class="hidden-item">О нас</h2>
         <div class="about-us-principles">
           <p class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
           <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h3 class="title-text">Выполняем заказы на разработку:</h3>
+          <h3 class="title-text about-us-principles-item">Выполняем заказы на разработку:</h3>
           <ul class="about-us-principles-list">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
@@ -91,89 +94,87 @@
           <p class="title-text about-us-statistics-item"><b>с 2004 года Любим точность во всем:</b></p>
           <table class="about-us-statistics-table">
             <tr>
-              <td>146<span>%</span></td>
-              <td>100<span>%</span></td>
-              <td>50<span>%</span></td>
+              <td>146<span><sup>%</sup></span></td>
+              <td>100<span><sup>%</sup></span></td>
+              <td>50<span><sup>%</sup></span></td>
             </tr>
-            <tr>
+            <tr class="about-us-statistics-table-item">
               <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
             </tr>
           </table>
         </div>
-      </section>
-      <div class="container">
-        <hr class="line-separation">
-      </div>  
+      </section> 
       <section class="partners container">
         <h2 class="hidden-item">Наши партнеры</h2>
         <ul class="partners-list">
           <li>
             <a href="#"><img src="img/partners-html-academy.png" alt="Html Academy" width="199" height="68"></a>
           </li>
-          <li>
+          <li class="partners-list-item">
               <a href="#"><img src="img/partners-borodinski.png" alt="Барбершоп Borodinski" width="209" height="87"></a> 
           </li>
-          <li>
+          <li class="partners-list-item">
               <a href="#"><img src="img/partners-pink.png" alt="Pink" width="185" height="52"></a> 
           </li>
-          <li>
+          <li class="partners-list-item">
               <a href="#"><img src="img/partners-mishka.png" alt="Mishka" width="173" height="84"></a> 
           </li>
         </ul>
-      </section>
-      <div class="container">
-          <hr class="line-separation">
-      </div> 
+      </section> 
     </main>
     <footer>
       <div class="footer-item">
-        <img src="img/footer-navigation-map.jpg" width="100%" height="auto" alt="Местоположение на карте">
+        <img src="img/footer-navigation-map.jpg" width="1440" height="415" alt="Местоположение на карте">
+      </div> 
+      <div class="container">
         <address class="main-footer-address">
           <p class="title-text main-footer-address-item">Nёrds design studio</p>
           <p class="main-footer-post-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78122757575" class="footer-navigation-phone-number">тел. +7 (812) 275-75-75</a></p> 
           <a href="#" class="write-us title-text">Напишите нам</a>
         </address>
-      </div>  
-      <div class="index-footer-columns container">
+      </div>
+      <div class="footer-columns container">
         <ul class="social-list">
-          <li><a class="social-item vk" href="#"><span class="hidden-item">Вконтакте</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 26.14 14.91">
-              <path d="M26 13.47l-.09-.17a13.55 13.55 0 0 0-2.6-3q-.87-.83-1.1-1.12A1 1 0 0 1 22 8a10.27 10.27 0 0 1 1.22-1.78l.88-1.16q2.35-3.13 2-4L26 .94a.8.8 0 0 0-.4-.22 2.14 2.14 0 0 0-.87 0h-3.92a.51.51 0 0 0-.27 0h-.3a.6.6 0 0 0-.15.14.93.93 0 0 0-.14.24 22.22 22.22 0 0 1-1.46 3.06q-.5.84-.93 1.46a7 7 0 0 1-.71.91 4.94 4.94 0 0 1-.52.47q-.23.18-.35.15l-.23-.05a.9.9 0 0 1-.31-.33 1.49 1.49 0 0 1-.16-.53v-.55-.65-.57-1.12-1-.75a3.14 3.14 0 0 0 0-.62 2.12 2.12 0 0 0-.14-.44.73.73 0 0 0-.28-.33 1.57 1.57 0 0 0-.46-.18A9 9 0 0 0 12.57 0a8.93 8.93 0 0 0-3.25.33 1.83 1.83 0 0 0-.52.41q-.25.3-.07.33a1.67 1.67 0 0 1 1.16.59l.08.16a2.6 2.6 0 0 1 .19.63 6.32 6.32 0 0 1 .12 1 10.59 10.59 0 0 1 0 1.7q-.07.71-.13 1.1a2.21 2.21 0 0 1-.18.64 2.69 2.69 0 0 1-.16.3l-.07.07a1 1 0 0 1-.37.07.86.86 0 0 1-.46-.19 3.27 3.27 0 0 1-.56-.52 7 7 0 0 1-.66-.93q-.37-.6-.76-1.42l-.22-.39q-.2-.38-.56-1.11t-.62-1.43A.9.9 0 0 0 5.2.9h-.07a.93.93 0 0 0-.22-.16A1.44 1.44 0 0 0 4.6.65L.87.68A1 1 0 0 0 .1.94L0 1a.44.44 0 0 0 0 .22 1.08 1.08 0 0 0 .08.37Q.9 3.53 1.86 5.31t1.66 2.87Q4.23 9.27 5 10.24t1 1.24l.37.41.34.33a8.06 8.06 0 0 0 1 .78 16.34 16.34 0 0 0 1.4.9 7.6 7.6 0 0 0 1.79.72 6.19 6.19 0 0 0 2 .22h1.57a1.08 1.08 0 0 0 .72-.3l.05-.07a.9.9 0 0 0 .1-.25 1.38 1.38 0 0 0 0-.37 4.48 4.48 0 0 1 .09-1.05 2.77 2.77 0 0 1 .23-.71 1.74 1.74 0 0 1 .29-.4 1.19 1.19 0 0 1 .23-.2h.11a.86.86 0 0 1 .77.21 4.52 4.52 0 0 1 .83.79q.39.47.93 1.05a6.41 6.41 0 0 0 1 .87l.27.16a3.31 3.31 0 0 0 .71.3 1.53 1.53 0 0 0 .76.07l3.48-.05a1.58 1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0 0-.1-.36z" fill="#fff">
-              </path>
-            </svg>
+          <li><a class="social-item" href="#"><span class="hidden-item">Вконтакте</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
           </a></li>
-          <li><a class="social-item facebook" href="#"><span class="hidden-item">Facebook</span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></a></li>
-          <li><a class="social-item instagram" href="#"><span class="hidden-item">Instagram</span></a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-            <path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff">
-            </path>
-          </svg></li>
+          <li><a class="social-item" href="#"><span class="hidden-item">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+          </a></li>
+          <li><a class="social-item" href="#"><span class="hidden-item">Instagram</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+          </a></li>
         </ul>
         <div class="tagline">
           <p><b> Давайте дружить, это выгодно!</b></p> 
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </div>  
+      </div> 
     </footer>
-    <section class="pop-up">                                                        
-      <h2>Напишите нам</h2>
-      <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
-        <p class="pop-up-form-item">
-          <label for="name-user-input">Ваше имя:</label>
-          <input name="user-name" id="name-user-input" type="text" placeholder="Имя Фамилия" required>
-        </p>        
-        <p class="pop-up-form-item">
-          <label for="email-user-input">Ваш e-mail:</label>
-          <input name="user-email" id="email-user-input" type="email" placeholder="email@example.com" required>
-        </p>        
-        <p class="pop-up-form-item">
-          <label for="text-area-user">Текст письма:</label>
-          <textarea id="text-area-user" name="user-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
-        </p>        
-        <button class="pop-up-send-form" type="submit">Отправить</button>
-        <button class="pop-up-close-button" aria-label="Закрыть pop up">&#215;</button>
-      </form>
-    </section>
+      <section class="pop-up hidden-item">
+          <h2>Напишите нам</h2>
+          <form action="http://echo.htmlacademy.ru" method="post" class="pop-up-form">
+            <div class="pop-up-columns-item">
+              <p class="pop-up-form-item">
+                <label for="name-user-input">Ваше имя:</label>
+                <input class="pop-up-form-item-input" name="user-name" id="name-user-input" type="text" placeholder="Имя Фамилия" required>
+              </p>        
+              <p class="pop-up-form-item">
+                <label for="email-user-input">Ваш e-mail:</label>
+                <input class="pop-up-form-item-input" name="user-email" id="email-user-input" type="email" placeholder="email@example.com" required>
+              </p>
+            </div>          
+            <p class="pop-up-form-item pop-up-form-textarea">
+              <label for="text-area-user">Текст письма:</label>
+              <textarea id="text-area-user" name="user-text" placeholder="В свободной форме" required></textarea>
+            </p>        
+            <button class="pop-up-send-form" type="submit">Отправить</button>
+            <button class="pop-up-close-button" aria-label="Закрыть pop up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+            </button>
+          </form>                                                
+      </section> 
   </body>
 </html>
