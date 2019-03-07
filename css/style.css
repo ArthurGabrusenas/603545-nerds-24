@@ -60,9 +60,6 @@ input[type="radio"].hidden-item {
 .footer-navigation {
     font-style: normal;
 }
-.footer-navigation img{
-    
-}
 address p:first-child {
     font-weight: bold;
     font-size: 18px;
@@ -947,19 +944,26 @@ address p:nth-child(2) {
     position: relative;
     width: 1160px;
 }
-.pop-up{
+
+.modal-show {
+    display: block;
+}
+.pop-up-login{
+    display: none;
     position: fixed;
     bottom: 195px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 20px 50px rgba(0,0,0,0.7);
     width: 760px;
-    background-color: #ffffff;
-    max-height: 590px;
     padding-left: 100px;
     padding-right: 100px;
+}
+.pop-up{
+    box-shadow: 0px 20px 50px rgba(0,0,0,0.7);
+    background-color: #ffffff;
+    max-height: 590px;
 }
 .pop-up-columns{
     width:840px;
