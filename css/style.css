@@ -1,3 +1,21 @@
+/*
+3) атрибут макс-длинна для всех полей инпут
+6) чек боксы 
+сетка: обнуть маргин
+использовать маргин  топ для сетки
+11) класс эррор с красной рамкой. проверку перенести на сторону яваскрипта
+14 для списка проектов там где сортировать "для картинок использовать отрицательный отступ" что бы перекрыть белую полоску полоску 
+----------------------------------
+1)button  бегунки в графе стоимость
+2)глобальный стиль img максимальная ширина 100% высота ауто
+4) поп ап позиционирование в процентах сверху (нижний убрать)
+5) крестик поп апа кривой в блоке. поддвинуть убрать лишние паддинги
+7) мы маленькая но гордая студия  жирность текста 500
+8) бордер для списка задать списку ширину 1160. для ли нужно убрать спейс бетвин и задать отступ справа  100. для каждого 3го элемента обнуть отступ справа.
+9) партенры добавить бордеры топ и боттом для самого списка
+13) кнопка напишите нам вставить ссылку вместо # фейковая ссылка врайтас.html
+*/
+
 /*общие стили*/
 html, body {
     margin: 0;
@@ -11,6 +29,10 @@ html, body {
 }
 a {
     text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 .main-header {
     background-color: #eeeeee;
@@ -53,7 +75,7 @@ input[type="radio"].hidden-item {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -154,7 +176,7 @@ address p:nth-child(2) {
 .about-us-principles .about-us-slogan {
     color: #000000;
     font-size: 45px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 45px;
 }
 .about-us-text {
@@ -377,7 +399,8 @@ address p:nth-child(2) {
     position: absolute;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
 }
 .footer-item iframe {
@@ -572,17 +595,20 @@ address p:nth-child(2) {
 /*конец слайдера*/
 .services{
     box-sizing: border-box;
-    border-bottom: 2px solid #eeeeee;
 }
 .services-list {
-    width: 1100px;
+    width: 1160px;
     display: flex;
     padding-top: 80px;
     padding-bottom: 80px;
-    justify-content: space-between;
+    border-bottom: 2px solid #eeeeee;
 }
 .services-list li {
     width: 300px;
+    padding-right: 100px;
+}
+.services-list li:nth-child(3n){
+    padding-right: 0;
 }
 .services-list h3{
     margin: 0;
@@ -666,29 +692,45 @@ address p:nth-child(2) {
 }
 .partners{
     box-sizing: border-box;
-    border-bottom: 2px solid #eeeeee;
-    border-top: 2px solid #eeeeee;
 }
 .partners-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 48px;
-    padding-bottom: 37px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #eeeeee;
+    border-top: 2px solid #eeeeee;
 }
 .partners-list li {
     width: 260px;
     text-align: center;
     position: relative;
 }    
-.partners-list-item::before {
+.partners-list-borodinski::before {
     content: "";
     position: absolute;
     right: 280px;
-    bottom: 0px;
+    bottom: 30px;
     border: 1px solid #eeeeee;
     height: 52px;
-}    
+}   
+.partners-list-pink::before {
+    content: "";
+    position: absolute;
+    right: 280px;
+    bottom: 10px;
+    border: 1px solid #eeeeee;
+    height: 52px;
+} 
+.partners-list-mishka::before {
+    content: "";
+    position: absolute;
+    right: 280px;
+    bottom: 25px;
+    border: 1px solid #eeeeee;
+    height: 52px;
+} 
 /*shop*/
 /*сложный фильтр*/
 .filter-item {
@@ -734,7 +776,7 @@ address p:nth-child(2) {
     left: 0;
     width: 4px;
     height: 4px;
-    padding: 0;
+    padding: 2px;
     border: 8px solid #ffffff;
     background-color: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -956,7 +998,7 @@ address p:nth-child(2) {
 .pop-up-login{
     display: none;
     position: fixed;
-    bottom: 195px;
+    top: 20%;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -1017,6 +1059,12 @@ address p:nth-child(2) {
     border-radius: 3px;
     width: 360px;
 }
+.pop-up-form-item input:hover{
+    border: 2px solid #b4b9bb;
+}
+.pop-up-form-item input:focus{
+    border: 2px solid #000000;
+}
 .pop-up-form-textarea textarea{
     width: inherit;
     padding-top: 10px;
@@ -1024,6 +1072,12 @@ address p:nth-child(2) {
     padding-left: 13px;
     border: 2px solid #d7dcde;
     border-radius: 3px;
+}
+.pop-up-form-item textarea:hover{
+    border: 2px solid #b4b9bb;
+}
+.pop-up-form-item textarea:focus{
+    border: 2px solid #000000;
 }
 .pop-up-send-form{
     margin: 0px;
@@ -1042,6 +1096,7 @@ address p:nth-child(2) {
     width: 23px;
     height: 23px;
     opacity: 0.5; 
+    padding: 0;
 }
 .pop-up-close-button:hover {
     opacity: 1; 
