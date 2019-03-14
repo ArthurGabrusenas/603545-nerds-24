@@ -1,21 +1,6 @@
 /*
-3) атрибут макс-длинна для всех полей инпут
-6) чек боксы 
-сетка: обнуть маргин
-использовать маргин  топ для сетки
 11) класс эррор с красной рамкой. проверку перенести на сторону яваскрипта
-14 для списка проектов там где сортировать "для картинок использовать отрицательный отступ" что бы перекрыть белую полоску полоску 
-----------------------------------
-1)button  бегунки в графе стоимость
-2)глобальный стиль img максимальная ширина 100% высота ауто
-4) поп ап позиционирование в процентах сверху (нижний убрать)
-5) крестик поп апа кривой в блоке. поддвинуть убрать лишние паддинги
-7) мы маленькая но гордая студия  жирность текста 500
-8) бордер для списка задать списку ширину 1160. для ли нужно убрать спейс бетвин и задать отступ справа  100. для каждого 3го элемента обнуть отступ справа.
-9) партенры добавить бордеры топ и боттом для самого списка
-13) кнопка напишите нам вставить ссылку вместо # фейковая ссылка врайтас.html
 */
-
 /*общие стили*/
 html, body {
     margin: 0;
@@ -229,10 +214,16 @@ address p:nth-child(2) {
     font-size: 16px;
     font-weight: 400;
     color: #283136;
+    padding-top: 11px;
+}
+.filter-features{
+    margin-top: 11px;
+    padding-left: 2px;
 }
 .filter-form-item{
     border: none;
     padding: 0;
+    margin: 0;
 }
 .filter-form-item-style {
     border: 2px solid #d7dcde;
@@ -260,6 +251,7 @@ address p:nth-child(2) {
     width: 260px;
     padding-top: 13px;
     padding-bottom: 16px;
+    margin-top: 35px;
 }
 .filter-form-button {
     font-weight: 500;
@@ -392,8 +384,13 @@ address p:nth-child(2) {
 .footer-item{
     text-align: center;
     position: relative;
-    margin-top: 58px;
     min-height: 415px;
+}
+.footer-item-shop{
+    margin-top: 65px;
+}
+.footer-item-index{
+    margin-top: 85px;
 }
 .footer-item img, .footer-item iframe {
     position: absolute;
@@ -740,6 +737,9 @@ address p:nth-child(2) {
     width: 260px;
     margin: 20px 0px;
   }
+  .filter-main-grid{
+      margin-top: 54px;
+  }
   .range-filter {
     width: 260px;
     margin-top: 49px;
@@ -840,15 +840,31 @@ address p:nth-child(2) {
     font-size: 14px;
     font-weight: 400;
 }
-.filter-type-list li:not(:nth-child(1)) {
-    padding-left: 25px;
+.filter-type-list li a svg{
+    opacity: 0.1;
+}
+.filter-type-list li:not(:nth-child(1)){
+    margin-left: 25px;
+}
+.filter-type-list li:nth-child(4){
+    margin-left: 47px;
+}
+.filter-type-list li:nth-child(5){
+    margin: 0;
+    margin-left: 17px;
+}
+.filter-type-list li a svg:hover{
+    opacity: 0.35;
+}
+.filter-type-list li a svg:active{
+    opacity: 1;
 }
 .filter-grid-list li{
     position: relative;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
 }
 .filter-form-item:nth-child(3){
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .catalog {
     width: 760px;
@@ -958,9 +974,6 @@ address p:nth-child(2) {
     border-radius: 50%;
     border: 1px solid #ffffff;
     background-color: #ffffff;
-}
-.footer-item-shop{
-    margin-top: 0px;
 }
 /*pop up*/
 .pop-up-form-item-style {
@@ -1118,7 +1131,7 @@ address p:nth-child(2) {
     display: inline-block;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
-    margin: 0 0 0 0;
+    margin: 0 10px 0 0;
     height: 25px;
     width: 25px;
     text-align: center;
@@ -1134,7 +1147,7 @@ address p:nth-child(2) {
     height: 25px;
     width: 25px;
     display: inline-block;
-    margin: 0 0 0 0;
+    margin: 0 12px 0 0;
     text-align: center;
     vertical-align: middle;
 }
