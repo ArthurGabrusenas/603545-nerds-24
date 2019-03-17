@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="header-navigation title-text container">
         <a href="index.html">
-          <img src="img/main-logo.png" alt="Web-студия Нёрдс" width="160" height="65">
+          <img class="header-logo" src="img/main-logo.svg" alt="Web-студия Нёрдс" width="160" height="65">
         </a>
         <ul class="header-navigation-menu">
           <li><a href="#">Студия</a></li>
@@ -48,8 +48,7 @@
             </fieldset>
             <fieldset class="filter-form-item filter-main-grid"> 
               <legend class="filter-headline title-text">Сетка:</legend>
-              <div class="filter-grid">
-                <ul class="filter-grid-list">
+                <ul class="filter-grid-list filter-grid">
                   <li>
                     <input class="hidden-item" type="radio" name="site-grid" id="site-adaptive">
                     <label for="site-adaptive">Адаптивная</label>
@@ -63,12 +62,10 @@
                     <label for="site-stretch">Резиновая</label>
                   </li>
                 </ul>
-              </div> 
             </fieldset>
             <fieldset class="filter-form-item">
               <legend class="filter-headline title-text">Особенности:</legend>
-              <div class="filter-features">
-                  <ul class="filter-grid-list ">
+                  <ul class="filter-grid-list filter-features">
                       <li>
                         <input class="hidden-item" name="slider" type="checkbox" id="filter-features-slider">
                         <label for="filter-features-slider">Слайдер</label>
@@ -90,7 +87,6 @@
                         <label for="filter-features-basket">Корзина</label>
                       </li>
                   </ul>
-              </div>
             </fieldset>    
             <button class="filter-form-button title-text" aria-label="Отправка формы">Показать</button>  
           </form>          
@@ -125,8 +121,10 @@
                 </a>
                 <div class="catalog-item-buy">
                     <div class="catalog-item-buy-column">
-                    <h3>Sedona</h3>                                                                               
-                    <p>Информационный сайт для туристов</p>
+                    <h3><a class="tovar-name" href="#">Sedona</a></h3>
+                    <div class="catalog-item-buy-overflow">                
+                      <p>Информационный сайт для туристов</p>
+                    </div>  
                     <a href="#" class="catalog-item-buy-button title-text">
                       <span class="hidden-item">кнопка покупки</span> 9 900 руб.
                     </a>      
@@ -146,7 +144,7 @@
                 </a>
                 <div class="catalog-item-buy">
                   <div class="catalog-item-buy-column">
-                    <h3>Pink app</h3>                                                 
+                    <h3><a class="tovar-name" href="#">Pink app</a></h3>                                                 
                     <p>Продуктовый лендинг приложения для ios и android</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                       <span class="hidden-item">кнопка покупки</span> 9 900 руб.
@@ -167,7 +165,7 @@
                 </a>
                 <div class="catalog-item-buy">
                   <div class="catalog-item-buy-column">
-                    <h3>Barbershop</h3>
+                    <h3><a class="tovar-name" href="#">Barbershop</a></h3>
                     <p>Сайт салона красоты. Для мужчин, да.</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                       <span class="hidden-item">кнопка покупки</span> 9 900 руб.
@@ -188,7 +186,7 @@
                 </a>
                 <div class="catalog-item-buy">
                   <div class="catalog-item-buy-column">
-                    <h3>Mishka</h3>
+                    <h3><a class="tovar-name" href="#">Mishka</a></h3>
                     <p>Интернет-магазин вязаных игрушек</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                         <span class="hidden-item">кнопка покупки</span> 9 900 руб.
@@ -209,7 +207,7 @@
                 </a>
                 <div class="catalog-item-buy">
                   <div class="catalog-item-buy-column">
-                    <h3>A plus</h3>
+                    <h3><a class="tovar-name" href="#">A plus</a></h3>
                     <p>Лендинг курсов повышения квалификации</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                         <span class="hidden-item">кнопка покупки</span> 9 900 руб.
@@ -230,7 +228,7 @@
                 </a>
                 <div class="catalog-item-buy">
                   <div class="catalog-item-buy-column">
-                    <h3>Кваст</h3>
+                    <h3><a class="tovar-name" href="#">Кваст</a></h3>
                     <p>Промо-сайт производителя крафтового кваса</p>
                     <a href="#" class="catalog-item-buy-button title-text">
                         <span class="hidden-item">кнопка покупки</span> 9 900 руб.

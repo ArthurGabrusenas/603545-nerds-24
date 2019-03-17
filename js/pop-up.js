@@ -40,13 +40,14 @@ form.addEventListener("submit", function (evt){
     nameUserInput.classList.add("modal-error");
     emailUserInput.classList.add("modal-error");
     textAreaUser.classList.add("modal-error");
+    popup.classList.add("pop-up-err");
    } else {
        if(isStorageSupport){
        localStorage.setItem("userName", userName.value);
        localStorage.setItem("userEmail", userEmail.value);
-       }
+       }   
    }
-});
+});  
 //закрытие поп ап
 popupClose.addEventListener("click",function(evt){
     evt.preventDefault();
@@ -54,6 +55,7 @@ popupClose.addEventListener("click",function(evt){
     nameUserInput.classList.remove("modal-error");
     emailUserInput.classList.remove("modal-error");
     textAreaUser.classList.remove("modal-error");
+    popup.classList.remove("pop-up-err");
 });
 // закрытие поп ап по нажатию на ескейп
 window.addEventListener("keydown", function (evt){
