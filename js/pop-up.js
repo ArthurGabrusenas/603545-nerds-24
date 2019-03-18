@@ -8,13 +8,10 @@ var form = popup.querySelector("form");
 var userName = popup.querySelector("[name=user-name]");
 var userEmail = popup.querySelector("[name=user-email]");
 var userText = popup.querySelector("[name=user-text]");
-/*тут должен быть querySelectorAll или getElementByClassName, что бы не размножать код через ID, но ничего не работает*/
+//тут должен быть querySelectorAll или getElementByClassName, что бы не размножать код через ID, но ничего не работает.
 var nameUserInput = document.getElementById("name-user-input");
 var emailUserInput = document.getElementById("email-user-input");
 var textAreaUser = document.getElementById("text-area-user");
-//var storageName = localStorage.getItem("userName");
-//var storageEmail = localStorage.getItem("userEmail");
-
 //проверка локалсторадж на ошибки
 try {
     storageName = localStorage.getItem("userName");
