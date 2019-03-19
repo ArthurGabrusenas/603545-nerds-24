@@ -1215,7 +1215,7 @@ address p:nth-child(2) {
     cursor: pointer;
 }
 /*стилизация чек боксов*/
-.filter-form-item input[type=checkbox] + label:before {
+.filter-form-item input[type=checkbox] + label::before {
     content: "";
     display: inline-block;
     background-image: url("../img/checkbox-off.svg");
@@ -1227,13 +1227,13 @@ address p:nth-child(2) {
     vertical-align: middle;  
     opacity: 0.5;
 }
-.filter-form-item input[type=checkbox] + label:hover:before{
+.filter-form-item input[type=checkbox] + label:hover::before{
     opacity: 1;
 }
-.filter-form-item input[type=checkbox]:checked + label:before {
+.filter-form-item input[type=checkbox]:checked + label::before {
     background-image: url("../img/checkbox-on.svg");
 }
-.filter-grid-list input[type=radio] + label:before {
+.filter-grid-list input[type=radio] + label::before {
     content: "";
     background-image: url("../img/radio-off.svg"); 
     background-repeat: no-repeat;
@@ -1245,18 +1245,18 @@ address p:nth-child(2) {
     vertical-align: middle;
     opacity: 0.5;
 }
-.filter-grid-list input[type=radio] + label:hover:before{
+.filter-grid-list input[type=radio] + label:hover::before{
     opacity: 1;
 }
-.filter-grid-list input[type=radio]:checked + label:before {
+.filter-grid-list input[type=radio]:checked + label::before {
     background-image: url("../img/radio-on.svg");   
 }  
 
-.filter-grid-list input[type=radio]:disabled + label:before {
+.filter-grid-list input[type=radio]:disabled + label::before {
     background-image: url("../img/radio-off.svg"); 
     opacity: 0.2;  
 }
-.filter-form-item input[type=checkbox]:disabled + label:before {
+.filter-form-item input[type=checkbox]:disabled + label::before {
     background-image: url("../img/checkbox-off.svg");
     opacity: 0.2;  
 }
