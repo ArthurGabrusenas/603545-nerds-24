@@ -2,15 +2,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    min-width: 1200px;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size:16px;
     background-color: #ffffff;
     line-height: 24px;
     color: #000000;
     font-weight: 400;
-}
-body {
-    min-width: 1200px;
 }
 a {
     text-decoration: none;
@@ -961,11 +959,12 @@ address p:nth-child(2) {
     width: 100%;
     padding-top: 29px;
     padding-bottom: 29px;
-}
-.catalog-item-buy-overflow{
     overflow: scroll;
-    max-height: 445px;
+    max-height: 519px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
 .catalog-item-buy-column{
     display: none;
     margin-bottom: 15px;

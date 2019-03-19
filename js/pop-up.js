@@ -34,9 +34,15 @@ form.addEventListener("submit", function (evt){
    if(!userName.value || !userEmail.value || !userText.value){
     evt.preventDefault();
     console.log("ввести данные");
-    nameUserInput.classList.add("modal-error");
-    emailUserInput.classList.add("modal-error");
-    textAreaUser.classList.add("modal-error");
+    if(!userName.value){
+        nameUserInput.classList.add("modal-error");
+    }
+    if(!userEmail.value){
+        emailUserInput.classList.add("modal-error");
+    }
+    if(!userText.value){
+        textAreaUser.classList.add("modal-error");
+    }
     popup.classList.add("pop-up-err");
    } else {
        if(isStorageSupport){
