@@ -8,7 +8,6 @@ var form = popup.querySelector("form");
 var userName = popup.querySelector("[name=user-name]");
 var userEmail = popup.querySelector("[name=user-email]");
 var userText = popup.querySelector("[name=user-text]");
-//тут должен быть querySelectorAll или getElementByClassName, что бы не размножать код через ID, но ничего не работает.
 var nameUserInput = document.getElementById("name-user-input");
 var emailUserInput = document.getElementById("email-user-input");
 var textAreaUser = document.getElementById("text-area-user");
@@ -39,10 +38,10 @@ form.addEventListener("submit", function (evt){
     }
     if(!userEmail.value){
         emailUserInput.classList.add("modal-error");
-    }
+    } 
     if(!userText.value){
         textAreaUser.classList.add("modal-error");
-    }
+    } 
     popup.classList.add("pop-up-err");
    } else {
        if(isStorageSupport){
@@ -59,6 +58,16 @@ popupClose.addEventListener("click",function(evt){
     emailUserInput.classList.remove("modal-error");
     textAreaUser.classList.remove("modal-error");
     popup.classList.remove("pop-up-err");
+});
+// при клике и в воде данных окна перестают показывать ошибку
+nameUserInput.addEventListener("click",function(evt){
+    nameUserInput.classList.remove("modal-error");
+});
+emailUserInput.addEventListener("click",function(evt){
+    emailUserInput.classList.remove("modal-error");
+});
+textAreaUser.addEventListener("click",function(evt){
+    textAreaUser.classList.remove("modal-error");
 });
 // закрытие поп ап по нажатию на ескейп
 window.addEventListener("keydown", function (evt){

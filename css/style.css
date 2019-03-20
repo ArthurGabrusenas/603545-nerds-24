@@ -1,3 +1,4 @@
+/*1)ползунки баттно задать ариал лабел макс цена мин цена*/
 /*общие стили*/
 html, body {
     margin: 0;
@@ -341,6 +342,7 @@ address p:nth-child(2) {
     padding: 0 20px;
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
 }
 .header-navigation {
     padding-top: 50px;
@@ -422,13 +424,16 @@ address p:nth-child(2) {
     margin-right: auto;
     border: none;
 }
+iframe{
+   width: 100%;
+}
 .footer-item iframe {
     z-index: 2;
 }
 .main-footer-address{
     position: absolute;
-    bottom: 58px;
-    left: 41px;
+    bottom: 56px;
+    left: 20px;
     width: 207px;
     padding-top: 50px;
     padding-bottom:48px;
@@ -544,7 +549,6 @@ address p:nth-child(2) {
   }
   .slider-list {
     margin: 0;
-    padding-left: 20px;
     list-style: none;
   }
   .slider-item {
@@ -554,17 +558,17 @@ address p:nth-child(2) {
   .slider-item:nth-child(1) {
     background-image: url("../img/slider-slide1.png");
     background-repeat: no-repeat;
-    background-position: 89.5% 10px;
+    background-position: 93.5% 10px;
   }
   .slider-item:nth-child(2) {
     background-image: url("../img/slider-slide2.png");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 100% -7px;
   }
   .slider-item:nth-child(3) {
     background-image: url("../img/slider-slide3.png");
     background-repeat: no-repeat;
-    background-position: 100% 20px;
+    background-position: 100% 12px;
   }
   #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
     display: block;
@@ -959,10 +963,10 @@ address p:nth-child(2) {
     width: 100%;
     padding-top: 29px;
     padding-bottom: 29px;
-    overflow: scroll;
+    overflow: auto;
     max-height: 519px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    /*overflow-y: scroll;
+    overflow-x: hidden;*/
 }
 
 .catalog-item-buy-column{
@@ -1172,6 +1176,7 @@ address p:nth-child(2) {
 }
 .pop-up-form-item input:focus{
     border: 2px solid #000000;
+    color: #444444;
 }
 .pop-up-form-textarea textarea{
     width: inherit;
