@@ -30,6 +30,10 @@ link.addEventListener("click",function(evt){
 });
 //валидация формы и проверка локал сторадж
 form.addEventListener("submit", function (evt){
+    popup.classList.remove("pop-up-err");
+    nameUserInput.classList.remove("modal-error");
+    emailUserInput.classList.remove("modal-error");
+    textAreaUser.classList.remove("modal-error");
    if(!userName.value || !userEmail.value || !userText.value){
     evt.preventDefault();
     console.log("ввести данные");

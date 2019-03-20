@@ -424,7 +424,7 @@ address p:nth-child(2) {
     margin-right: auto;
     border: none;
 }
-iframe{
+.footer-item iframe{
    width: 100%;
 }
 .footer-item iframe {
