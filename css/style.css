@@ -21,11 +21,22 @@ img {
 .main-header {
     background-color: #eeeeee;
 }
-header ul, main ul, footer ul {
+.header-navigation-menu,
+.basket, 
+.slider-list,
+.services-list, 
+.about-us-principles-list,
+.partners-list,
+.social-list,
+.filter-grid-list,
+.filter-type-list,
+.catalog-list-template,
+.catalog-list-nav 
+ {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+}*/
 .title-text {
     text-transform: uppercase;
 }
@@ -66,11 +77,11 @@ input[type="radio"].hidden-item {
 .footer-navigation {
     font-style: normal;
 }
-address p:first-child {
+.main-footer-address p:first-child {
     font-weight: bold;
     font-size: 18px;
 }
-address p:nth-child(2) {
+.main-footer-address p:nth-child(2) {
     color: #8f8f8f;
 }
 .footer-navigation-phone-number {
@@ -217,6 +228,9 @@ address p:nth-child(2) {
 .filter-grid-list label {
      color: #283136;
 }
+.filter-grid-list label{
+    outline-width: 3px;
+}
 .filter-features{
     margin-top: 11px;
     padding-left: 2px;
@@ -237,7 +251,7 @@ address p:nth-child(2) {
 }
 .filter-form-item-style:focus {
     border: 2px solid #000000;
-    color: #000000;
+    color: #ee6a6a;
 }
 .filter-type-list a {
     color: #b2b2b2;
@@ -743,6 +757,7 @@ address p:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -909,7 +924,7 @@ address p:nth-child(2) {
     font-size: 14px;
     font-weight: 400;
 }
-.filter-type-list li a svg{
+.filter-type-list svg{
     opacity: 0.1;
 }
 .filter-type-list li:not(:nth-child(1)){
@@ -922,10 +937,10 @@ address p:nth-child(2) {
     margin: 0;
     margin-left: 17px;
 }
-.filter-type-list li a svg:hover{
+.filter-type-list svg:hover{
     opacity: 0.35;
 }
-.filter-type-list li a svg:active{
+.filter-type-list svg:active{
     opacity: 1;
 }
 .filter-grid-list li{
