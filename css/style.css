@@ -1251,6 +1251,9 @@ input[type="radio"].hidden-item {
 .filter-form-item input[type=checkbox] + label:hover::before{
     opacity: 1;
 }
+.filter-form-item input[type=checkbox]:focus + label::before{
+    opacity: 1;
+}
 .filter-form-item input[type=checkbox]:checked + label::before {
     background-image: url("../img/checkbox-on.svg");
 }
@@ -1267,6 +1270,9 @@ input[type="radio"].hidden-item {
     opacity: 0.5;
 }
 .filter-grid-list input[type=radio] + label:hover::before{
+    opacity: 1;
+}
+.filter-grid-list input[type=radio]:focus + label::before{
     opacity: 1;
 }
 .filter-grid-list input[type=radio]:checked + label::before {
